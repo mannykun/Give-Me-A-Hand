@@ -1,2 +1,2 @@
-# hand initialize
+# Give Me A Hand!
 
