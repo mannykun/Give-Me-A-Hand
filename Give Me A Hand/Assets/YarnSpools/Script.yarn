@@ -1,0 +1,39 @@
+﻿title: Start
+position: -127,-23
+---
+<<declare $demo = 0>>
+Demo mode?
+->Yes
+    <<set $demo = 1>>
+->No
+    <<set $demo = 0>>
+
+Welcome to Give Me a Hand!
+Who would you like to go on a date with?
+->Left Thumb
+    <<if $demo > 0>>
+        Not available during demo
+    <<else>>
+        <<jump Tum>>
+    <<endif>>
+===
+title: Tum
+position: 140,145
+---
+<<declare $affection = 0>>
+Soothing jazz echoes throughout the candlelit room. 
+It’s the perfect setting for a lovely couple, there’s just one problem. 
+Your date is late! They were supposed to be here 17 minutes ago! 
+*Are they even going to show up? Am I getting stood up right now?* 
+As the thoughts start to sting, a broad silhouette emerges through the doorway and approaches in your direction. 
+They sit down across from you, but something about them feels… off.
+
+->You must be Thumb, Nice to meet you?
+    <<set $affection += 1>>
+    “I am Tum?”
+->Who the finger-licking fuck are you (something like this, it’s gonna say I am Tum anyways)
+    “I am Tum”
+->Are you kidding me? You’re a toe!
+<<set $affection -= 1>>
+    “I am Tum!”
+===
