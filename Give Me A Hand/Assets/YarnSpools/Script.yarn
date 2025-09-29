@@ -1,7 +1,9 @@
 ﻿title: Start
-position: -127,-23
+position: -78,-506
 ---
 <<declare $demo = 0>>
+<<declare $affection = 0>>
+<<declare $ToeAffection = 0>>
 Demo mode?
 ->Yes
     <<set $demo = 1>>
@@ -9,6 +11,11 @@ Demo mode?
     <<set $demo = 0>>
 
 Welcome to Give Me a Hand!
+<<jump Menu>>
+===
+title: Menu
+position: -114,-294
+---
 Who would you like to go on a date with?
 ->Left Thumb
     <<if $demo > 0>>
@@ -16,24 +23,80 @@ Who would you like to go on a date with?
     <<else>>
         <<jump Tum>>
     <<endif>>
+->Right Thumb
+    <<if $demo > 0>>
+        Not available during demo
+    <<else>>
+        <<jump Feil>>
+    <<endif>>
 ===
 title: Tum
-position: 140,145
+position: -417,-71
 ---
-<<declare $affection = 0>>
+<<set $ToeAffection = 0>>
 Soothing jazz echoes throughout the candlelit room. 
 It’s the perfect setting for a lovely couple, there’s just one problem. 
 Your date is late! They were supposed to be here 17 minutes ago! 
 *Are they even going to show up? Am I getting stood up right now?* 
-As the thoughts start to sting, a broad silhouette emerges through the doorway and approaches in your direction. 
+As the thoughts start to sting, a broad silhouette emerges through the doorway[br /]and approaches in your direction. 
 They sit down across from you, but something about them feels… off.
 
+“...” The silence echoes as it stares at you with the blankest of stares. 
+It looks lost, and you look confused. 
+*There’s no way this is Thumb, this is a toe for crying out loud! 
+I must have been catfished!* 
+Despite your concerns, you decide to stay and play it off[br /]because it would be rude to leave them here alone.
+
 ->You must be Thumb, Nice to meet you?
-    <<set $affection += 1>>
+    <<set $ToeAffection += 1>>
     “I am Tum?”
 ->Who the finger-licking fuck are you (something like this, it’s gonna say I am Tum anyways)
     “I am Tum”
 ->Are you kidding me? You’re a toe!
-<<set $affection -= 1>>
+    <<set $ToeAffection -= 1>>
     “I am Tum!”
+
+How the fuck does one respond to I am Tum???
+->Uhhh sure you are (skeptical answer, tbd)
+    “...” 
+->What took you so long? Did your train get delayed?
+    <<set $ToeAffection += 1>>
+    “(Insert random and long train fact)”
+->… (Stare back)
+    <<set $affection -= 1>>
+    “...” It’s visibly uncomfortable as you lock eyes.
+Skepticism setting in (placeholder)
+->Well uhhh… Tum… Do you have any sort of hobbies that don’t involve staring at people?
+    “I like to finger painting. Mona Lisa my favorite”
+    <<set $ToeAffection += 1>>
+->I believe you mentioned before this that you teach at Yale
+    “What’s a Yale?”
+->(Placeholder: belittle him with big words)
+    <<set $ToeAffection -= 1>>
+    “...” It looks at you startled and confused,[br /]indicating that it didn’t understand most of what you said. 
+<<jump LeftThumb>>
+===
+title: Feil
+position: 137,-18
+---
+<<set $affection = 0>>
+The observatory has a subtle fragrance of old paper and coffee. 
+A single beam of moonlight shines through the skylight,[br /]and the air is filled with the quiet hum of machines. 
+Feil the Grass-Wrighthumb stands at the telescope,[br /]moving dials about with an excessive flourish. 
+He loudly clears his throat,[br /]and the light from the stars shines on his glasses. 
+<<jump Menu>>
+===
+title: LeftThumb
+position: -21,-246
+---
+<<set $affection = 0 - ($ToeAffection/2)>>
+“And who might you be?” 
+You hear from behind you. 
+You turn around and see a familiar face[br /]staring angrily at the interesting individual sitting across from you. 
+*So there’s my real date!*
+Thumb walks over to Tum,[br /]drags it out of its seat,[br /]and carries it to the door. 
+“Get out!” Thumb yells, as they reach down to grab Tum’s scarf. 
+Thumb puts Tum’s scarf on, wearing it as some sort of trophy. 
+Thumb makes their way to Tum’s old seat and carries on as if nothing just happened.
+<<jump Menu>>
 ===
