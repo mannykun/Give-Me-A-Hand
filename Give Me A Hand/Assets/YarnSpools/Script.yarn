@@ -25,8 +25,8 @@ Who would you like to go on a date with?
     <<else>>
         <<jump Feil>>
     <<endif>>
-->Quit Game
-    <<quitGame>>
+//->Quit Game
+    //<<quitGame>>
 ===
 title: Tum
 position: -440,-118
@@ -59,12 +59,12 @@ How the fuck does one respond to I am Tum???
     “...” 
 ->What took you so long? Did your train get delayed?
     <<set $ToeAffection += 1>>
-    “Train??[br /]Did you know the world’s longest train was in Australia,[br /]stretching over 7 kilometers with 268 cars?[br /]It carried iron ore across the outback!”
+    “Train?? Did you know the world’s longest train was in Australia,[br /]stretching over 7 kilometers with 268 cars? It carried iron ore across the outback!”
 ->… (Stare back)
     <<set $affection -= 1>>
     “...” It’s visibly uncomfortable as you lock eyes.
 *This thing’s weirding me out,[br /]I don’t even know what to say back anymore*
-->Well uhhh… Tum… Do you have any sort of hobbies that don’t involve staring at people?
+->Well uhhh… Tum…[br /]Do you have any sort of hobbies that don’t involve staring at people?
     “I like to finger painting. Mona Lisa my favorite”[br /]Your jaw drops to the floor in disbelief, almost instantly.[br /]*I need to get out of here*
     <<set $ToeAffection += 1>>
 ->Okay, Tum… tell me something interesting about yourself.
@@ -110,24 +110,35 @@ They set their bag on the floor, smoothing out Tum’s scarf with pride.
 ->Honestly, I was about to leave. You’re lucky you showed up when you did.
     <<set $affection -= 1>>
     “Lucky? No no no. I fought an impostor for this seat! I earned this date.”
-But I’m here now, and I’d like to learn about you. Tell me, are you someone who finds pleasure in learning for the sake of knowledge?
+But I’m here now, and I’d like to learn about you.
+Tell me, are you someone who finds pleasure in learning for the sake of knowledge?
 ->Of course! As they say, knowledge is power!
     <<set $affection += 1>>
-    “Ah, finally, somebody who appreciates learning. Knowledge is power, and power is freedom. You’d be the perfect student during my lectures.”
+    “Ah, finally, somebody who appreciates learning.
+    Knowledge is power, and power is freedom.
+    You’d be the perfect student during my lectures.”
 ->Sometimes. It depends on what mood I’m in.
-    “A pragmatic answer. Not wrong, though I do hope you’re in the mood to learn more about me.”
+    “A pragmatic answer.
+    Not wrong, though I do hope you’re in the mood to learn more about me.”
 ->Not really. I like sticking to what I know
     <<set $affection -= 1>>
     “How unfortunate… Willful ignorance is such a tragedy.”
-You know, I teach gymnastics at Yale. Yes. Gymnastics… at Yale. Not only do I instruct the students in flips and handstands, but I also focus on precision, discipline, and the theoretical mechanics behind every movement. It’s… rigorous, but the results speak for themselves.
+You know, I teach gymnastics at Yale. Yes. Gymnastics… at Yale. 
+Not only do I instruct the students in flips and handstands,[br /]but I also focus on precision, discipline,[br /]and the theoretical mechanics behind every movement.
+It’s… rigorous, but the results speak for themselves.
 ->Hmmm… gymnastics at Yale. Unexpected, yet interesting. I wouldn’t have guessed you’d be into gymnastics.
-    “Ah, appearances can be deceiving. One does not simply teach gymnastics without embodying it. Every posture, every motion… It's a discipline of the mind as much as the body. Perhaps you’ll see it for yourself someday."
+    “Ah, appearances can be deceiving.
+    One does not simply teach gymnastics without embodying it.
+    Every posture, every motion… It's a discipline of the mind as much as the body. Perhaps you’ll see it for yourself someday."
 ->There’s gymnastics at Yale?
     <<set $affection -= 1>>
-    “Indeed there is. Not only do they offer it, but the program is one of the best in the nation. My Rate My Professors rating is phenomenal,  a perfect 5.0 rating to be exact.”
+    “Indeed there is. Not only do they offer it, but the program is one of the best in the nation.
+    My Rate My Professors rating is phenomenal,  a perfect 5.0 rating to be exact.”
 ->Wow! You clearly take a lot of pride in your teaching. Being in your class must be an amazing experience!
     <<set $affection += 1>>
-    “Naturally! I expect nothing less than excellence from my students. Watching them achieve the excellence they strive for is truly a delight. Perhaps one day I can give you some lessons.”
+    “Naturally! I expect nothing less than excellence from my students.
+    Watching them achieve the excellence they strive for is truly a delight.
+    Perhaps one day I can give you some lessons.”
 
 <<jump Menu>>
 ===

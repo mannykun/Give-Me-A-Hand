@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 
-public class quitGame
+public class QuitGame
 {
     [YarnCommand("quitGame")]
-    void QuitGame () 
+    public static void ExitGame () 
     {
     Application.Quit ();
     Debug.Log("Game is exiting");
