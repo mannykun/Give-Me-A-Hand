@@ -25,6 +25,8 @@ Who would you like to go on a date with?
     <<else>>
         <<jump Feil>>
     <<endif>>
+->Quit Game
+    <<quitGame>>
 ===
 title: Tum
 position: -440,-118
@@ -57,7 +59,7 @@ How the fuck does one respond to I am Tum???
     “...” 
 ->What took you so long? Did your train get delayed?
     <<set $ToeAffection += 1>>
-    “Train??[br /] Did you know the world’s longest train was in Australia,[br /]stretching over 7 kilometers with 268 cars?[br /]It carried iron ore across the outback!”
+    “Train??[br /]Did you know the world’s longest train was in Australia,[br /]stretching over 7 kilometers with 268 cars?[br /]It carried iron ore across the outback!”
 ->… (Stare back)
     <<set $affection -= 1>>
     “...” It’s visibly uncomfortable as you lock eyes.
