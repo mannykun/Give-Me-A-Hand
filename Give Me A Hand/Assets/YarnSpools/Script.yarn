@@ -1,7 +1,9 @@
 ﻿title: Start
-position: -127,-23
+position: -78,-506
 ---
 <<declare $demo = 0>>
+<<declare $affection = 0>>
+<<declare $ToeAffection = 0>>
 Demo mode?
 ->Yes
     <<set $demo = 1>>
@@ -9,31 +11,134 @@ Demo mode?
     <<set $demo = 0>>
 
 Welcome to Give Me a Hand!
+<<jump Menu>>
+===
+title: Menu
+position: -114,-294
+---
 Who would you like to go on a date with?
 ->Left Thumb
+        <<jump Tum>>
+->Right Thumb
     <<if $demo > 0>>
         Not available during demo
     <<else>>
-        <<jump Tum>>
+        <<jump Feil>>
     <<endif>>
+//->Quit Game
+    //<<quitGame>>
 ===
 title: Tum
-position: 140,145
+position: -440,-118
 ---
-<<declare $affection = 0>>
+<<set $ToeAffection = 0>>
 Soothing jazz echoes throughout the candlelit room. 
 It’s the perfect setting for a lovely couple, there’s just one problem. 
 Your date is late! They were supposed to be here 17 minutes ago! 
 *Are they even going to show up? Am I getting stood up right now?* 
-As the thoughts start to sting, a broad silhouette emerges through the doorway and approaches in your direction. 
+As the thoughts start to sting, a broad silhouette emerges through the doorway[br /]and approaches in your direction. 
 They sit down across from you, but something about them feels… off.
 
+“...” The silence echoes as it stares at you with the blankest of stares. 
+It looks lost, and you look confused. 
+*There’s no way this is Thumb, this is a toe for crying out loud! 
+I must have been catfished!* 
+Despite your concerns, you decide to stay and play it off[br /]because it would be rude to leave them here alone.
+
 ->You must be Thumb, Nice to meet you?
-    <<set $affection += 1>>
-    “I am Tum?”
-->Who the finger-licking fuck are you (something like this, it’s gonna say I am Tum anyways)
+    <<set $ToeAffection += 1>>
+    “I am Tum?” *It looks pleased??*
+->Who the finger-licking fuck are you //(something like this, it’s gonna say I am Tum anyways)
     “I am Tum”
 ->Are you kidding me? You’re a toe!
-<<set $affection -= 1>>
+    <<set $ToeAffection -= 1>>
     “I am Tum!”
+
+How the fuck does one respond to I am Tum???
+->Uhhh.. okay //(skeptical answer, tbd)
+    “...” 
+->What took you so long? Did your train get delayed?
+    <<set $ToeAffection += 1>>
+    “Train?? Did you know the world’s longest train was in Australia,[br /]stretching over 7 kilometers with 268 cars? It carried iron ore across the outback!”
+->… (Stare back)
+    <<set $affection -= 1>>
+    “...” It’s visibly uncomfortable as you lock eyes.
+*This thing’s weirding me out,[br /]I don’t even know what to say back anymore*
+->Well uhhh… Tum…[br /]Do you have any sort of hobbies that don’t involve staring at people?
+    “I like to finger painting. Mona Lisa my favorite”[br /]Your jaw drops to the floor in disbelief, almost instantly.[br /]*I need to get out of here*
+    <<set $ToeAffection += 1>>
+->Okay, Tum… tell me something interesting about yourself.
+    “Tum don’t fit inside glove”[br /]*I definitely should’ve left when I had the chance.*
+->I’m astonished that a creature of such…[br /]rudimentary cognitive faculties could attempt communication in this social setting.
+    <<set $ToeAffection -= 1>>
+    “...”
+    It looks at you frightened and confused,[br /]indicating that it didn’t understand most of what you said. 
+    *I desperately need a way out of this*
+
+“And who might you be?” 
+You hear from behind you. 
+You turn around and see a familiar face[br /]staring angrily at the interesting individual sitting across from you. 
+*So there’s my real date!*
+Thumb walks over to Tum,[br /]drags it out of its seat,[br /]and carries it to the door. 
+“Get out!” Thumb yells, as they reach down to grab Tum’s scarf. 
+Thumb puts Tum’s scarf on, wearing it as some sort of trophy. 
+Thumb makes their way to Tum’s old seat and carries on as if nothing just happened.
+<<jump LeftThumb>>
+===
+title: Feil
+position: 137,-18
+---
+<<set $affection = 0>>
+The observatory has a subtle fragrance of old paper and coffee. 
+A single beam of moonlight shines through the skylight,[br /]and the air is filled with the quiet hum of machines. 
+Feil the Grass-Wrighthumb stands at the telescope,[br /]moving dials about with an excessive flourish. 
+He loudly clears his throat,[br /]and the light from the stars shines on his glasses. 
+<<jump Menu>>
+===
+title: LeftThumb
+position: -435,71
+---
+<<set $affection = 0 - ($ToeAffection/2)>>
+“Sorry I’m late,[br /]A student needed me in office hours for a bit longer than I expected,[br /]had to get on the next train instead.” 
+They set their bag on the floor, smoothing out Tum’s scarf with pride. 
+“But I’m here now. And you… you waited for me. That’s… nice.”
+->Well, I figured I might as well stick around. The food sounds good.
+    “Fair enough. I suppose I should be flattered that my choice of fine dining kept you waiting.”
+->Why wouldn’t I wait? You’re more than worth waiting for.
+    <<set $affection += 1>>
+    “That’s… delightfully reassuring. Thank you.”
+->Honestly, I was about to leave. You’re lucky you showed up when you did.
+    <<set $affection -= 1>>
+    “Lucky? No no no. I fought an impostor for this seat! I earned this date.”
+But I’m here now, and I’d like to learn about you.
+Tell me, are you someone who finds pleasure in learning for the sake of knowledge?
+->Of course! As they say, knowledge is power!
+    <<set $affection += 1>>
+    “Ah, finally, somebody who appreciates learning.
+    Knowledge is power, and power is freedom.
+    You’d be the perfect student during my lectures.”
+->Sometimes. It depends on what mood I’m in.
+    “A pragmatic answer.
+    Not wrong, though I do hope you’re in the mood to learn more about me.”
+->Not really. I like sticking to what I know
+    <<set $affection -= 1>>
+    “How unfortunate… Willful ignorance is such a tragedy.”
+You know, I teach gymnastics at Yale. Yes. Gymnastics… at Yale. 
+Not only do I instruct the students in flips and handstands,[br /]but I also focus on precision, discipline,[br /]and the theoretical mechanics behind every movement.
+It’s… rigorous, but the results speak for themselves.
+->Hmmm… gymnastics at Yale. Unexpected, yet interesting. I wouldn’t have guessed you’d be into gymnastics.
+    “Ah, appearances can be deceiving.
+    One does not simply teach gymnastics without embodying it.
+    Every posture, every motion… It's a discipline of the mind as much as the body. Perhaps you’ll see it for yourself someday."
+->There’s gymnastics at Yale?
+    <<set $affection -= 1>>
+    “Indeed there is. Not only do they offer it, but the program is one of the best in the nation.
+    My Rate My Professors rating is phenomenal,  a perfect 5.0 rating to be exact.”
+->Wow! You clearly take a lot of pride in your teaching. Being in your class must be an amazing experience!
+    <<set $affection += 1>>
+    “Naturally! I expect nothing less than excellence from my students.
+    Watching them achieve the excellence they strive for is truly a delight.
+    Perhaps one day I can give you some lessons.”
+
+<<jump Menu>>
 ===
