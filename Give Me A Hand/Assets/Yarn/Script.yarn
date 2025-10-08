@@ -133,7 +133,7 @@ Thumb: It’s… rigorous, but the results speak for themselves.
 ->Hmmm… gymnastics at Yale. Unexpected, yet interesting. I wouldn’t have guessed you’d be into gymnastics.
     Thumb: “Ah, appearances can be deceiving.
     Thumb: One does not simply teach gymnastics without embodying it.
-    Thumb: Every posture, every motion… It's a discipline of the mind as much as the body. Perhaps you’ll see it for yourself someday."
+    Thumb: Every posture, every motion… It's a discipline of the mind as much as the body[br /]Perhaps you’ll see it for yourself someday."
 ->There’s gymnastics at Yale?
     <<set $affection -= 1>>
     Thumb: “Indeed there is. Not only do they offer it, but the program is one of the best in the nation.
@@ -149,7 +149,7 @@ Thumb: It’s… rigorous, but the results speak for themselves.
     Thumb: Hmm… perhaps we can arrange that if you pass my assessment later on.
 Thumb: I don’t just teach the fundamentals and techniques
 Thumb: I also teach the history of gymnastics.
-Thumb: Did you know that the first modern Olympic appearance for gymnastics was the 1896 Olympic Games in Athens, Greece?
+Thumb: Did you know that the first modern Olympic appearance for gymnastics[br /]was the 1896 Olympic Games in Athens, Greece?
 ->I love Olympic gymnastics! 
     Thumb: Really? What do you know? 
     The German duo of Hermann Weingärtner and Alfred Flatow really dominated the field, winning 10 medals combined! 
@@ -159,32 +159,33 @@ Thumb: Did you know that the first modern Olympic appearance for gymnastics was 
     Thumb: I’ll reveal the finer points of Weingärtner and Flatow’s technique… if you prove worthy."
     <<set $affection += 1>>
 ->Hmmm… I didn’t know gymnastics had been a part of the Olympics for that long. That’s pretty interesting.
-    Thumb: “Indeed. It’s been around for longer than most people realize. The rich history gives more context to the sport and its mechanics than meets the eye."
-->Is knowing the history of tumbling and flipping around on mats really that important? It seems like a bit much…
+    Thumb: “Indeed. It’s been around for longer than most people realize.[br /]The rich history gives more context to the sport and its mechanics than meets the eye."
+->Is knowing the history of tumbling and flipping around on mats really that important?[br /]It seems like a bit much…
     Thumb: “A bit much? Historical context makes all the difference.[br /] But if you prefer your flips as shallow as your knowledge, be my guest.”
     <<set $affection -= 1>>
 
 Thumb: Well that concludes your quiz and our lesson. 
-Thumb: I must say… you fared better than I anticipated. Your attentiveness,  or lack thereof, has been duly noted. 
+Thumb: I must say… you fared better than I anticipated.[br /]Your attentiveness,  or lack thereof, has been duly noted. 
 Thumb: Now, for your overall grade. Would you like to know?
 
 <<if $ToeAffection > 2>>
-    Thumb: Your performance tonight was… disappointing to say the least. I truly thought you were capable of more. I don’t take pleasure in failing students, but I can’t reward effort without results. You had potential, however potential doesn’t always translate to success. I can’t reward slackers… so whatever this was ends here… in failure.”
-    Thumb hands you a paper, face down, and gets up from their seat. They leave a tip behind for the waiter and walk out… 
+    Thumb: Your performance tonight was… disappointing to say the least.[br /]I truly thought you were capable of more. I don’t take pleasure in failing students,[br /]but I can’t reward effort without results. 
+    Thumb: You had potential, however potential doesn’t always translate to success.[br /]I can’t reward slackers… so whatever this was ends here… in failure.”
+    Thumb hands you a paper, face down, and gets up from their seat.[br /]They leave a tip behind for the waiter and walk out… 
     You flip the paper over and peek at your grade… 32.
-    As you get ready to pay and leave, a familiar broad figure reemerges. They make their way back towards you, but this time with a noticeable limp. (Give him a band-aid?) 
-    Tum, now sitting across from you, takes your graded paper, eats it whole, and goes back to staring at you. 
-    However… this time there is something noticeable behind Tum’s eyes… something very into you. Given your disastrous date with this newfound opportunity, you accept Tum as your new left thumb.
+    As you get ready to pay and leave, a familiar broad figure reemerges.[br /]They make their way back towards you, but this time with a noticeable limp. (Give him a band-aid?) 
+    Tum, now sitting across from you, takes your graded paper,[br /]eats it whole, and goes back to staring at you. 
+    However… this time there is something noticeable behind Tum’s eyes…[br /]something very into you. Given your disastrous date with this newfound opportunity,[br /]you accept Tum as your new left thumb.
     Tum: “I am Thumb?!” 
     Congratulations?? You romanced Tum!
 <<elseif $affection > 1>>
     Thumb: “Your performance was… Unbelievable! Outstanding! Remarkable! You’ve far exceeded my expectations!”
-    Thumb hands you a paper with your grade at the top. You glance down at it… 100.
+    Thumb hands you a paper with your grade at the top.[br /]You glance down at it… 100.
     When you look back up, you see Thumb glancing back at you with soft eyes.
-    Thumb: “I think you’ve earned more than just an A+. Matter of fact, I think my office hours just opened up… Would you like to schedule an appointment?”
+    Thumb: “I think you’ve earned more than just an A+. Matter of fact,[br /]I think my office hours just opened up… Would you like to schedule an appointment?”
     Player: “I would more than love to get some fine tutoring from you…”
     Thumb: “Then let’s get out of here. Shall we?”
-    Thumb takes the bill, pays for the both of you and leaves a generous tip. 
+    Thumb takes the bill,[br /]pays for the both of you and leaves a generous tip. 
     Thumb gets up and offers you assistance out of your seat. 
     You comply and Thumb wraps around you as the two of you walk out together.
     Congratulations! You romanced Thumb!

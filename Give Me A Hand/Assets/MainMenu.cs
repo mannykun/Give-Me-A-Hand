@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
 
 public class MainMenu : MonoBehaviour
 {
     public Button StartButton;
     public Button QuitButton;
+    public DialogueRunner dialogueRunner;
 
     void Start()
     {
@@ -16,7 +18,7 @@ public class MainMenu : MonoBehaviour
 
     void StartGame()
     {
-        SceneManager.LoadScene("Demo");
+        dialogueRunner.StartDialogue("Start");
     }
 
     void QuitGame()
