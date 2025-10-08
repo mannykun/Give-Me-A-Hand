@@ -33,9 +33,11 @@ Who would you like to go on a date with?
 title: Tum
 position: -440,-118
 ---
-<<Swap Restaurant>>
+//<<Swap Restaurant>>
 <<set $ToeAffection = 0>>
-Soothing jazz echoes throughout the candlelit room. 
+<<PlayHappy>>
+Soothing jazz echoes throughout the candlelit room.
+<<PlayIdle>>
 It’s the perfect setting for a lovely couple, there’s just one problem. 
 Your date is late! They were supposed to be here 17 minutes ago! 
 *Are they even going to show up? Am I getting stood up right now?* 

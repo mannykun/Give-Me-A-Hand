@@ -325,6 +325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartButton: {fileID: 0}
   QuitButton: {fileID: 0}
+  dialogueRunner: {fileID: 0}
 --- !u!1 &454150011
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartButton: {fileID: 1552677363}
   QuitButton: {fileID: 1529895984}
+  dialogueRunner: {fileID: 0}
 --- !u!4 &454150013
 Transform:
   m_ObjectHideFlags: 0
