@@ -28,8 +28,6 @@ Who would you like to go on a date with?
     <<else>>
         <<jump Feil>>
     <<endif>>
-->Quit Game
-    <<quitGame>>
 ===
 title: Tum
 position: -440,-118
