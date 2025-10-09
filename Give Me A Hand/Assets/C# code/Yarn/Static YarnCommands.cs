@@ -46,7 +46,7 @@ public class Location
         {
             SpriteRenderer locationSprite = Location.GetComponent<SpriteRenderer>();
             SpriteRenderer lastLocation;
-            
+
 
             lastLocation = currentLocation;
             currentLocation = locationSprite;
@@ -59,5 +59,32 @@ public class Location
             }
         }
         else Debug.LogWarning("GameObject not found for command 'Swap'.");
+    }
+}
+
+public class Animation
+{
+    static SpriteRenderer currentEmotion;
+    
+    [YarnCommand("Animate")]
+    public static void Animate(GameObject Emotion)
+    {
+        if (Emotion != null)
+        {
+            SpriteRenderer emotionSprite = Emotion.GetComponent<SpriteRenderer>();
+            SpriteRenderer lastEmotion;
+
+
+            lastEmotion = currentEmotion;
+            currentEmotion = emotionSprite;
+            currentEmotion.enabled = true;
+            Debug.Log(Emotion + " is now active");
+            if (lastEmotion != null)
+            {
+                lastEmotion.enabled = false;
+                Debug.Log(lastEmotion + " is no longer active");
+            }
+        }
+        else Debug.LogWarning("GameObject not found for command 'Animate'.");
     }
 }

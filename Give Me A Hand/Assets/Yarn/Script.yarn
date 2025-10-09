@@ -24,6 +24,7 @@ Who would you like to go on a date with?
 ->Right Thumb
     <<if $demo > 0>>
         Not available during demo
+        <<jump Menu>>
     <<else>>
         <<jump Feil>>
     <<endif>>
@@ -33,60 +34,63 @@ Who would you like to go on a date with?
 title: Tum
 position: -440,-118
 ---
-//<<Swap Restaurant>>
+<<Swap Restaurant>>
 <<set $ToeAffection = 0>>
-<<PlayHappy>>
 Soothing jazz echoes throughout the candlelit room.
-<<PlayIdle>>
+<<Animate  Idle>>
 It’s the perfect setting for a lovely couple, there’s just one problem. 
 Your date is late! They were supposed to be here 17 minutes ago! 
 *Are they even going to show up? Am I getting stood up right now?* 
 As the thoughts start to sting, a broad silhouette emerges through the doorway[br /]and approaches in your direction. 
 They sit down across from you, but something about them feels… off.
 
-“...” The silence echoes as it stares at you with the blankest of stares. 
+Mysterious Toe: “...” 
+The silence echoes as it stares at you with the blankest of stares. 
 It looks lost, and you look confused. 
-*There’s no way this is Thumb, this is a toe for crying out loud! 
-I must have been catfished!* 
+*There’s no way this is Thumb, this is a toe for crying out loud![br /]I must have been catfished!* 
 Despite your concerns, you decide to stay and play it off[br /]because it would be rude to leave them here alone.
 
 ->You must be Thumb, Nice to meet you?
     <<set $ToeAffection += 1>>
-    “I am Tum?” *It looks pleased??*
+    Tum: “I am Tum?” 
+    *It looks pleased??*
 ->Who… who… are you?
-    “I am Tum”
+    Tum: “I am Tum”
 ->Are you kidding me? You’re a toe!
     <<set $ToeAffection -= 1>>
-    “I am Tum!”
+    Tum: “I am Tum!”
 
 How does one respond to I am Tum???
 ->Uhhh.. okay //(skeptical answer, tbd)
-    “...” 
+    Tum: “...” 
 ->What took you so long? Did your train get delayed?
     <<set $ToeAffection += 1>>
-    “Train?? Did you know the world’s longest train was in Australia,[br /]stretching over 7 kilometers with 268 cars? It carried iron ore across the outback!”
+    Tum: “Train?? Did you know the world’s longest train was in Australia,[br /]stretching over 7 kilometers with 268 cars? It carried iron ore across the outback!”
 ->… (Stare back)
     <<set $affection -= 1>>
-    “...” It’s visibly uncomfortable as you lock eyes.
+    Tum: “...” 
+    It’s visibly uncomfortable as you lock eyes.
 It continues to stare at you,[br /]not a single thought visible through those eyes
 *This thing’s weirding me out,[br /]I don’t even know what to say back anymore*
 ->Well uhhh… Tum…[br /]Do you have any sort of hobbies that don’t involve staring at people?
-    “I like to finger painting. Mona Lisa my favorite”[br /]Your jaw drops to the floor in disbelief, almost instantly.[br /]*I need to get out of here*
+    Tum: “I like to finger painting. Mona Lisa my favorite”
+    Your jaw drops to the floor in disbelief, almost instantly.[br /]*I need to get out of here*
     <<set $ToeAffection += 1>>
 ->Okay, Tum… tell me something interesting about yourself.
-    “Tum don’t fit inside glove”[br /]*I definitely should’ve left when I had the chance.*
+    Tum: “Tum don’t fit inside glove”
+    *I definitely should’ve left when I had the chance.*
 ->I’m astonished that a creature of such…[br /]rudimentary cognitive faculties could attempt communication in this social setting.
     <<set $ToeAffection -= 1>>
-    “...”
+    Tum: “...”
     It looks at you frightened and confused,[br /]indicating that it didn’t understand most of what you said. 
     *I desperately need a way out of this*
 
-“And who might you be?” 
+Your REAL Date: “And who might you be?” 
 You hear from behind you. 
 You turn around and see a familiar face[br /]staring angrily at the interesting individual sitting across from you. 
 *So there’s my real date!*
 Thumb walks over to Tum,[br /]drags it out of its seat,[br /]and carries it to the door. 
-“Get out!” Thumb yells, as they reach down to grab Tum’s scarf. 
+Thumb: “Get out!” Thumb yells, as they reach down to grab Tum’s scarf. 
 Thumb puts Tum’s scarf on, wearing it as some sort of trophy. 
 Thumb makes their way to Tum’s old seat and carries on as if nothing just happened.
 <<jump LeftThumb>>
@@ -109,7 +113,7 @@ Thumb: “Sorry I’m late,[br /]A student needed me in office hours for a bit l
 Thumb: They set their bag on the floor, smoothing out Tum’s scarf with pride. 
 Thumb: “But I’m here now. And you… you waited for me. That’s… nice.”
 ->Well, I figured I might as well stick around. The food sounds good.
-    Thumb: “Fair enough. I suppose I should be flattered that my choice of fine dining kept you waiting.”
+    Thumb: “Fair enough.[br /]I suppose I should be flattered that my choice of fine dining kept you waiting.”
 ->Why wouldn’t I wait? You’re more than worth waiting for.
     <<set $affection += 1>>
     Thumb: “That’s… delightfully reassuring. Thank you.”
@@ -117,7 +121,7 @@ Thumb: “But I’m here now. And you… you waited for me. That’s… nice.”
     <<set $affection -= 1>>
     Thumb: “Lucky? No no no. I fought an impostor for this seat! I earned this date.”
 Thumb: But I’m here now, and I’d like to learn about you.
-Thumb: Tell me, are you someone who finds pleasure in learning for the sake of knowledge?
+Thumb: Tell me,[br /]are you someone who finds pleasure in learning for the sake of knowledge?
 ->Of course! As they say, knowledge is power!
     <<set $affection += 1>>
     Thumb: “Ah, finally, somebody who appreciates learning.
@@ -132,15 +136,15 @@ Thumb: Tell me, are you someone who finds pleasure in learning for the sake of k
 Thumb: You know, I teach gymnastics at Yale. Yes. Gymnastics… at Yale. 
 Thumb: Not only do I instruct the students in flips and handstands,[br /]but I also focus on precision, discipline,[br /]and the theoretical mechanics behind every movement.
 Thumb: It’s… rigorous, but the results speak for themselves.
-->Hmmm… gymnastics at Yale. Unexpected, yet interesting. I wouldn’t have guessed you’d be into gymnastics.
+->Hmmm… gymnastics at Yale.[br /]Unexpected, yet interesting.[br /]I wouldn’t have guessed you’d be into gymnastics.
     Thumb: “Ah, appearances can be deceiving.
     Thumb: One does not simply teach gymnastics without embodying it.
     Thumb: Every posture, every motion… It's a discipline of the mind as much as the body[br /]Perhaps you’ll see it for yourself someday."
 ->There’s gymnastics at Yale?
     <<set $affection -= 1>>
-    Thumb: “Indeed there is. Not only do they offer it, but the program is one of the best in the nation.
-    Thumb: My Rate My Professors rating is phenomenal,  a perfect 5.0 rating to be exact.”
-->Wow! You clearly take a lot of pride in your teaching. Being in your class must be an amazing experience!
+    Thumb: “Indeed there is. Not only do they offer it,[br /]but the program is one of the best in the nation.
+    Thumb: My Rate My Professors rating is phenomenal, a perfect 5.0 rating to be exact.”
+->Wow! You clearly take a lot of pride in your teaching.[br /]Being in your class must be an amazing experience!
     Thumb: “Naturally! I expect nothing less than excellence from my students.
     Thumb: Watching them achieve the excellence they strive for is truly a delight.
     So what are the prerequisites for your class?[br /]I’d love to be a student of yours.
@@ -154,15 +158,15 @@ Thumb: I also teach the history of gymnastics.
 Thumb: Did you know that the first modern Olympic appearance for gymnastics[br /]was the 1896 Olympic Games in Athens, Greece?
 ->I love Olympic gymnastics! 
     Thumb: Really? What do you know? 
-    The German duo of Hermann Weingärtner and Alfred Flatow really dominated the field, winning 10 medals combined! 
+    The German duo of Hermann Weingärtner and[br /]Alfred Flatow really dominated the field,[br /]winning 10 medals combined! 
     Thumb: Aha! You truly know your stuff! You’re a lot more invested than I originally anticipated.
     You’ll have to teach me their secret someday… maybe after dinner?
     Thumb: I only give private lessons to the most dedicated of students,[br /]but you… you might just have potential. 
-    Thumb: I’ll reveal the finer points of Weingärtner and Flatow’s technique… if you prove worthy."
+    Thumb: I’ll reveal the finer points of Weingärtner and Flatow’s technique…[br /]if you prove worthy."
     <<set $affection += 1>>
-->Hmmm… I didn’t know gymnastics had been a part of the Olympics for that long. That’s pretty interesting.
+->Hmmm… I didn’t know gymnastics had been a part of the Olympics for that long.[br /]That’s pretty interesting.
     Thumb: “Indeed. It’s been around for longer than most people realize.[br /]The rich history gives more context to the sport and its mechanics than meets the eye."
-->Is knowing the history of tumbling and flipping around on mats really that important?[br /]It seems like a bit much…
+->Is knowing the history of tumbling and[br /]flipping around on mats really that important?[br /]It seems like a bit much…
     Thumb: “A bit much? Historical context makes all the difference.[br /] But if you prefer your flips as shallow as your knowledge, be my guest.”
     <<set $affection -= 1>>
 
@@ -171,13 +175,14 @@ Thumb: I must say… you fared better than I anticipated.[br /]Your attentivenes
 Thumb: Now, for your overall grade. Would you like to know?
 
 <<if $ToeAffection > 2>>
-    Thumb: Your performance tonight was… disappointing to say the least.[br /]I truly thought you were capable of more. I don’t take pleasure in failing students,[br /]but I can’t reward effort without results. 
+    Thumb: Your performance tonight was… disappointing to say the least.[br /]I truly thought you were capable of more.[br /]I don’t take pleasure in failing students,[br /]but I can’t reward effort without results. 
     Thumb: You had potential, however potential doesn’t always translate to success.[br /]I can’t reward slackers… so whatever this was ends here… in failure.”
     Thumb hands you a paper, face down, and gets up from their seat.[br /]They leave a tip behind for the waiter and walk out… 
     You flip the paper over and peek at your grade… 32.
-    As you get ready to pay and leave, a familiar broad figure reemerges.[br /]They make their way back towards you, but this time with a noticeable limp. (Give him a band-aid?) 
+    As you get ready to pay and leave, a familiar broad figure reemerges.[br /]They make their way back towards you, but this time with a noticeable limp.
     Tum, now sitting across from you, takes your graded paper,[br /]eats it whole, and goes back to staring at you. 
-    However… this time there is something noticeable behind Tum’s eyes…[br /]something very into you. Given your disastrous date with this newfound opportunity,[br /]you accept Tum as your new left thumb.
+    However… this time there is something noticeable behind Tum’s eyes…[br /]something very into you.
+    Given your disastrous date with this newfound opportunity,[br /]you accept Tum as your new left thumb.
     Tum: “I am Thumb?!” 
     Congratulations?? You romanced Tum!
 <<elseif $affection > 1>>
@@ -194,7 +199,8 @@ Thumb: Now, for your overall grade. Would you like to know?
 <<else>>
     Thumb: “Your performance tonight was… disappointing to say the least.[br /]I truly thought you were capable of more.[br /]I don’t take pleasure in failing students, but I can’t reward effort without results.[br /]You had potential, however potential doesn’t always translate to success.
     Thumb: I can’t reward slackers… so whatever this was ends here… in failure.”
-    Thumb hands you a paper, face down, and gets up from their seat. They leave a tip behind for the waiter and walk out… 
+    Thumb hands you a paper, face down,[br /]and gets up from their seat. 
+    They leave a tip behind for the waiter and walk out… 
     You flip it over and peek at your grade… 56.
     There’s a note at the bottom as well… “Study harder next time.”
 <<endif>>
