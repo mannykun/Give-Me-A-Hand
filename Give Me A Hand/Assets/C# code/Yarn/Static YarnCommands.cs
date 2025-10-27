@@ -77,13 +77,13 @@ public class Animation
 
             lastEmotion = currentEmotion;
             currentEmotion = emotionSprite;
-            currentEmotion.enabled = true;
-            Debug.Log(Emotion + " is now active");
             if (lastEmotion != null)
             {
                 lastEmotion.enabled = false;
                 Debug.Log(lastEmotion + " is no longer active");
             }
+            currentEmotion.enabled = true;
+            Debug.Log(Emotion + " is now active");
         }
         else Debug.LogWarning("GameObject not found for command 'Animate'.");
     }
