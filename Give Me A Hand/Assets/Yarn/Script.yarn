@@ -36,7 +36,8 @@ position: -440,-118
 <<set $ToeAffection = 0>>
 Soothing jazz echoes throughout the candlelit room.
 <<Animate  RTIdle>>
-It’s the perfect setting for a lovely couple, there’s just one problem. 
+It’s the perfect setting for a lovely couple, there’s just one problem.
+<<Animate RTCrazy>>
 Your date is late! They were supposed to be here 17 minutes ago! 
 *Are they even going to show up? Am I getting stood up right now?* 
 As the thoughts start to sting, a broad silhouette emerges through the doorway[br /]and approaches in your direction. 
