@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using Yarn.Unity;
-
 
 public class MainMenu : MonoBehaviour
 {
@@ -18,6 +16,8 @@ public class MainMenu : MonoBehaviour
 
     void StartGame()
     {
+        StartButton.gameObject.SetActive(false);
+        MoveQuitButtonToTopRight();
         dialogueRunner.StartDialogue("Start");
     }
 
@@ -27,5 +27,17 @@ public class MainMenu : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
+    }
+
+    void MoveQuitButtonToTopRight()
+    {
+        var rt = QuitButton.GetComponent<RectTransform>();
+        if (rt == null) return;
+        rt.anchorMin = new Vector2(1f, 1f);
+        rt.anchorMax = new Vector2(1f, 1f);
+        rt.pivot = new Vector2(1f, 1f);
+        rt.anchoredPosition = new Vector2(-20f, -20f);
+        QuitButton.interactable = true;
+        QuitButton.gameObject.SetActive(true);
     }
 }

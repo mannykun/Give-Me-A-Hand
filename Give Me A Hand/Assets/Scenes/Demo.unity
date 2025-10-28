@@ -337,6 +337,7 @@ MonoBehaviour:
   StartButton: {fileID: 1552677363}
   QuitButton: {fileID: 1529895984}
   dialogueRunner: {fileID: 27164734}
+  quitButtonRect: {fileID: 0}
 --- !u!1 &352825495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,9 +1176,9 @@ RectTransform:
   - {fileID: 2033460729}
   m_Father: {fileID: 80219262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40.5, y: -61.8}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -371.5, y: -255.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1529895984
