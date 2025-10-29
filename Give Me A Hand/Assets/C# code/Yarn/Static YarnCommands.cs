@@ -67,7 +67,7 @@ public class Animation
 {
     static SpriteRenderer currentEmotion;
     static Animator currentAnimation;
-    
+
     [YarnCommand("Animate")]
     public static void Animate(GameObject Emotion)
     {
@@ -95,5 +95,20 @@ public class Animation
             }
         }
         else Debug.LogWarning("GameObject not found for command 'Animate'.");
+    }
+
+    [YarnCommand("StopAnimation")]
+    public static void StopAnimation(GameObject Emotion)
+    {
+        Debug.Log("The current animation is " + currentEmotion);
+        if (Emotion != null)
+        {
+            SpriteRenderer emotionSprite = Emotion.GetComponent<SpriteRenderer>();
+            Animator emotionAnimation = Emotion.GetComponent<Animator>();
+            emotionSprite.enabled = false;
+            emotionAnimation.enabled = false;
+            Debug.Log(emotionSprite + " is no longer active");
+            
+        }
     }
 }
