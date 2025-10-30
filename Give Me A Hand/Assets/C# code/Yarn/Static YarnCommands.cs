@@ -98,17 +98,18 @@ public class Animation
     }
 
     [YarnCommand("StopAnimation")]
-    public static void StopAnimation(GameObject Emotion)
+    public static void StopAnimation()
     {
         Debug.Log("The current animation is " + currentEmotion);
-        if (Emotion != null)
+        if (currentEmotion != null)
         {
-            SpriteRenderer emotionSprite = Emotion.GetComponent<SpriteRenderer>();
-            Animator emotionAnimation = Emotion.GetComponent<Animator>();
+            SpriteRenderer emotionSprite = currentEmotion.GetComponent<SpriteRenderer>();
+            Animator emotionAnimation = currentEmotion.GetComponent<Animator>();
             emotionSprite.enabled = false;
             emotionAnimation.enabled = false;
             Debug.Log(emotionSprite + " is no longer active");
-            
+            currentEmotion = null;
+            currentAnimation = null;
         }
     }
 }

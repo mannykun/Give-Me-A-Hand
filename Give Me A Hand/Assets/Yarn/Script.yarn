@@ -36,12 +36,12 @@ position: -440,-118
 <<Swap Restaurant>>
 <<set $ToeAffection = 0>>
 Soothing jazz echoes throughout the candlelit room.
-<<Animate  RTIdle>>
 It’s the perfect setting for a lovely couple, there’s just one problem.
 Your date is late! They were supposed to be here 17 minutes ago! 
 *Are they even going to show up? Am I getting stood up right now?* 
 As the thoughts start to sting, a broad silhouette emerges through the doorway[br /]and approaches in your direction. 
 They sit down across from you, but something about them feels… off.
+<<Animate  RTIdle>>
 
 Mysterious Toe: “...” 
 The silence echoes as it stares at you with the blankest of stares. 
@@ -203,6 +203,6 @@ Thumb: Now, for your overall grade. Would you like to know?
     You flip it over and peek at your grade… 56.
     There’s a note at the bottom as well… “Study harder next time.”
 <<endif>>
-
+<<StopAnimation>>
 <<jump Menu>>
 ===
