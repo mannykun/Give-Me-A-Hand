@@ -94,16 +94,6 @@ Thumb puts Tum’s scarf on, wearing it as some sort of trophy.
 Thumb makes their way to Tum’s old seat and carries on as if nothing just happened.
 <<jump LeftThumb>>
 ===
-title: Feil
-position: 137,-18
----
-<<set $affection = 0>>
-The observatory has a subtle fragrance of old paper and coffee. 
-A single beam of moonlight shines through the skylight,[br /]and the air is filled with the quiet hum of machines. 
-Feil the Grass-Wrighthumb stands at the telescope,[br /]moving dials about with an excessive flourish. 
-He loudly clears his throat,[br /]and the light from the stars shines on his glasses. 
-<<jump Menu>>
-===
 title: LeftThumb
 position: -435,71
 ---
@@ -204,5 +194,15 @@ Thumb: Now, for your overall grade. Would you like to know?
     There’s a note at the bottom as well… “Study harder next time.”
 <<endif>>
 <<StopAnimation>>
+<<jump Menu>>
+===
+title: Feil
+position: 137,-18
+---
+<<set $affection = 0>>
+The observatory has a subtle fragrance of old paper and coffee. 
+A single beam of moonlight shines through the skylight,[br /]and the air is filled with the quiet hum of machines. 
+Feil the Grass-Wrighthumb stands at the telescope,[br /]moving dials about with an excessive flourish. 
+He loudly clears his throat,[br /]and the light from the stars shines on his glasses. 
 <<jump Menu>>
 ===
