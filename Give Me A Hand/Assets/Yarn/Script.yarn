@@ -23,12 +23,7 @@ Who would you like to go on a date with?
 ->Left Thumb
         <<jump Tum>>
 ->Right Thumb
-    <<if $demo > 0>>
-        Not available during demo
-        <<jump Menu>>
-    <<else>>
         <<jump Feil>>
-    <<endif>>
 ===
 title: Tum
 position: -440,-118
@@ -41,9 +36,9 @@ Your date is late! They were supposed to be here 17 minutes ago!
 *Are they even going to show up? Am I getting stood up right now?* 
 As the thoughts start to sting, a broad silhouette emerges through the doorway[br /]and approaches in your direction. 
 They sit down across from you, but something about them feels… off.
-<<Animate  RTIdle>>
+<<Animate Tum>>
 
-Mysterious Toe: “...” 
+Mysterious Stranger: “...” 
 The silence echoes as it stares at you with the blankest of stares. 
 It looks lost, and you look confused. 
 *There’s no way this is Thumb, this is a toe for crying out loud![br /]I must have been catfished!* 
@@ -72,6 +67,7 @@ How does one respond to I am Tum???
 It continues to stare at you,[br /]not a single thought visible through those eyes
 *This thing’s weirding me out,[br /]I don’t even know what to say back anymore*
 ->Well uhhh… Tum…[br /]Do you have any sort of hobbies that don’t involve staring at people?
+    <<Animate TumLisa>>
     Tum: “I like to finger painting. Mona Lisa my favorite”
     Your jaw drops to the floor in disbelief, almost instantly.[br /]*I need to get out of here*
     <<set $ToeAffection += 1>>
@@ -87,17 +83,19 @@ It continues to stare at you,[br /]not a single thought visible through those ey
 Your REAL Date: “And who might you be?” 
 You hear from behind you. 
 You turn around and see a familiar face[br /]staring angrily at the interesting individual sitting across from you. 
+<<Animate RTCrazy>>
 *So there’s my real date!*
 Thumb walks over to Tum,[br /]drags it out of its seat,[br /]and carries it to the door. 
 Thumb: “Get out!” Thumb yells, as they reach down to grab Tum’s scarf. 
 Thumb puts Tum’s scarf on, wearing it as some sort of trophy. 
 Thumb makes their way to Tum’s old seat and carries on as if nothing just happened.
+<<Animate RTIdle>>
 <<jump LeftThumb>>
 ===
 title: LeftThumb
 position: -435,71
 ---
-<<set $affection = 0 - ($ToeAffection/2)>>
+<<set $affection = 0 -($ToeAffection/2)>>
 Thumb: “Sorry I’m late,[br /]A student needed me in office hours for a bit longer than I expected,[br /]had to get on the next train instead.” 
 Thumb: They set their bag on the floor, smoothing out Tum’s scarf with pride. 
 Thumb: “But I’m here now. And you… you waited for me. That’s… nice.”
@@ -109,6 +107,7 @@ Thumb: “But I’m here now. And you… you waited for me. That’s… nice.”
 ->Honestly, I was about to leave. You’re lucky you showed up when you did.
     <<set $affection -= 1>>
     Thumb: “Lucky? No no no. I fought an impostor for this seat! I earned this date.”
+
 Thumb: But I’m here now, and I’d like to learn about you.
 Thumb: Tell me,[br /]are you someone who finds pleasure in learning for the sake of knowledge?
 ->Of course! As they say, knowledge is power!
@@ -122,6 +121,7 @@ Thumb: Tell me,[br /]are you someone who finds pleasure in learning for the sake
 ->Not really. I like sticking to what I know
     <<set $affection -= 1>>
     Thumb: “How unfortunate… Willful ignorance is such a tragedy.”
+
 Thumb: You know, I teach gymnastics at Yale. Yes. Gymnastics… at Yale. 
 Thumb: Not only do I instruct the students in flips and handstands,[br /]but I also focus on precision, discipline,[br /]and the theoretical mechanics behind every movement.
 Thumb: It’s… rigorous, but the results speak for themselves.
@@ -142,9 +142,10 @@ Thumb: It’s… rigorous, but the results speak for themselves.
     How about private lessons after dinner,[br /]or office hours as you call it?
     <<set $affection += 1>>
     Thumb: Hmm… perhaps we can arrange that if you pass my assessment later on.
+
 Thumb: I don’t just teach the fundamentals and techniques
 Thumb: I also teach the history of gymnastics.
-Thumb: Did you know that the first modern Olympic appearance for gymnastics[br /]was the 1896 Olympic Games in Athens, Greece?
+Thumb: Did you know that the first modern Olympic[br /]appearance for gymnastics was the 1896 Olympic Games in Athens, Greece?
 ->I love Olympic gymnastics! 
     Thumb: Really? What do you know? 
     The German duo of Hermann Weingärtner and[br /]Alfred Flatow really dominated the field,[br /]winning 10 medals combined! 
@@ -153,11 +154,23 @@ Thumb: Did you know that the first modern Olympic appearance for gymnastics[br /
     Thumb: I only give private lessons to the most dedicated of students,[br /]but you… you might just have potential. 
     Thumb: I’ll reveal the finer points of Weingärtner and Flatow’s technique…[br /]if you prove worthy."
     <<set $affection += 1>>
-->Hmmm… I didn’t know gymnastics had been a part of the Olympics for that long.[br /]That’s pretty interesting.
-    Thumb: “Indeed. It’s been around for longer than most people realize.[br /]The rich history gives more context to the sport and its mechanics than meets the eye."
+->Hmmm…[br /]I didn’t know gymnastics had been a part of the Olympics for that long.[br /]That’s pretty interesting.
+    Thumb: “Indeed.[br /]It’s been around for longer than most people realize.[br /]The rich history gives more context to the sport and its mechanics than meets the eye."
 ->Is knowing the history of tumbling and[br /]flipping around on mats really that important?[br /]It seems like a bit much…
     Thumb: “A bit much? Historical context makes all the difference.[br /] But if you prefer your flips as shallow as your knowledge, be my guest.”
     <<set $affection -= 1>>
+
+Thumb: Right now, my gymnastics class is in the middle of our sign language unit. It’s all about precision, flexibility, and finger-strength. After all, flexibility is important with the build I have. What do you know about flexibility?
+->Flexibility? The most advanced pose you can get with that build is a thumbs up.
+    <<set $affection -=1>>
+    Thumb: You may be mocking me… and my teaching style for that matter, but discipline begins with the fundamentals. Even the humble thumbs-up requires a great deal of balance and endurance.
+->Flexibility is key for you… or rather, for us. After all, mastery of the distal interphalangeal must be the pinnacle of control.
+    <<set $affection +=1>>
+    Ah! Finally, someone who understands true finesse. Most overlook the distal interphalangeal, yet it governs the subtlety of every pose, the precision of every flip. You may yet survive my sign language unit unscathed… if you keep that attention to detail.
+->So, what’s the big end of the unit test?
+    Thumb: Currently I’m planning on having my students sign in great detail what routine they will be performing and then performing it.
+    How about signing the alphabet?
+    Thumb: Interesting idea, but signing the alphabet on its own is easy. Instead I think I’ll have my students balance on one finger while spelling the alphabet.
 
 Thumb: Well that concludes your quiz and our lesson. 
 Thumb: I must say… you fared better than I anticipated.[br /]Your attentiveness,  or lack thereof, has been duly noted. 
@@ -174,8 +187,9 @@ Thumb: Now, for your overall grade. Would you like to know?
     Given your disastrous date with this newfound opportunity,[br /]you accept Tum as your new left thumb.
     Tum: “I am Thumb?!” 
     Congratulations?? You romanced Tum!
-<<elseif $affection > 1>>
-    Thumb: “Your performance was… Unbelievable! Outstanding! Remarkable! You’ve far exceeded my expectations!”
+<<elseif $affection > 2>>
+    Thumb: “Your performance was… 
+    Thumb: Unbelievable![br /]Outstanding![br /]Remarkable![br /]You’ve far exceeded my expectations!”
     Thumb hands you a paper with your grade at the top.[br /]You glance down at it… 100.
     When you look back up, you see Thumb glancing back at you with soft eyes.
     Thumb: “I think you’ve earned more than just an A+. Matter of fact,[br /]I think my office hours just opened up… Would you like to schedule an appointment?”
@@ -186,7 +200,9 @@ Thumb: Now, for your overall grade. Would you like to know?
     You comply and Thumb wraps around you as the two of you walk out together.
     Congratulations! You romanced Thumb!
 <<else>>
-    Thumb: “Your performance tonight was… disappointing to say the least.[br /]I truly thought you were capable of more.[br /]I don’t take pleasure in failing students, but I can’t reward effort without results.[br /]You had potential, however potential doesn’t always translate to success.
+    Thumb: “Your performance tonight was… disappointing to say the least.[br /]I truly thought you were capable of more.
+    Thumb: I don’t take pleasure in failing students,[br /]but I can’t reward effort without results.
+    Thumb: You had potential, however potential doesn’t always translate to success.
     Thumb: I can’t reward slackers… so whatever this was ends here… in failure.”
     Thumb hands you a paper, face down,[br /]and gets up from their seat. 
     They leave a tip behind for the waiter and walk out… 
@@ -200,9 +216,192 @@ title: Feil
 position: 137,-18
 ---
 <<set $affection = 0>>
+<<Swap Restaurant>>
 The observatory has a subtle fragrance of old paper and coffee. 
 A single beam of moonlight shines through the skylight,[br /]and the air is filled with the quiet hum of machines. 
 Feil the Grass-Wrighthumb stands at the telescope,[br /]moving dials about with an excessive flourish. 
-He loudly clears his throat,[br /]and the light from the stars shines on his glasses. 
+He loudly clears his throat,[br /]and the light from the stars shines on his glasses.
+<<Animate RTIdle>>
+
+Feil: "Look up," he says in a deep, rich voice.
+Feil:"Every star you see has been burning for millions, and sometimes billions, of years.
+Feil: But here you are, looking at them alongside me. A strange coincidence, or maybe even an inevitability.”
+Feil: “I am Feil the Grass-Wrighthumb, a galaxy explorer, a debunker of pseudoscience,[br /]and maybe even the smartest thumb in the room. 
+Feil: But enough about me... what draws you to the stars?“
+->I know very little about stars but I know that they are truly breathtaking.
+    <<set $affection +=1>>
+    Feil: “A mind that is open to the universe is... magnetic. 
+    Feil: I feel like I'm being sucked into your orbit, like gravity. 
+    Feil: Be careful, I might classify you as a celestial body.”
+->Stars? Those are just little lights in the sky.. They don’t affect me.
+    <<set $affection -=1>>
+    Feil:“You’ve just committed a cosmic crime of underestimation! They are so much more than what the eyes can see.”
+->I want to better understand them and our place in this journey we call life. Not like those dumb-ass Yale folks who just romanticize them.
+    <<set $affection +=2>>
+    Feil: “A true visionary! You’re way of thinking is music to my ears. To be honest, if I had to make a choice between those Yale star gazers and your eyes.. Well, Yale just never stood a chance.”
+
+Feil: “When we gaze up into the night sky, we’re not just looking out into the cosmos.. We’re looking back into past. Some of the stars we see in the sky have already deceased, however the light still travels it’s way to us. It’s almost as if the cosmos itself can’t let go. Now tell me.. What does that make you feel?”
+->“I feel small.. but in a weirdly positive way! I feel like I’m apart of something greater than myself”
+    Feil: “That’s it! Having humility in the face of infinity.. Now that truly captivates me. For you are not just a drop in the ocean, you’re the ripple that’s caught my eye.”
+    <<set $affection +=1>>
+->“Makes me feel like none of this really matters, and we all just end up as dust in the end.”
+    Feil: “Stardust… yes. However, you’re missing the point! To dismiss all of reality is also the same as dismissing yourself. You’d do better to try and shine brighter than any dust cloud I’ve measured.”
+    <<set $affection -=1>>
+->“This makes me feel more interconnected with world around me. Light that has travled across time and space was destined to meet my eyes here with you.”
+    Feil: “Now that is some fascinating cosmic thinking. You’ve turned astrophysics into a romance, and I’ll admit it – you outplayed me here. You be careful or I might just go and start charting a new constellation in your honor.”
+    <<set $affection +=2>>
+
+Feil: “Starlight can take millions of years to reach our eyes' gaze. It’s as if the universe is reaching, trying to grab your attention. I now find myself doing the same exact thing… but now I’d like to know, what deserves your attention more: yourself or the stars?”
+->“I couldn’t compare. I really just blend in with the masses.”
+    <<set $affection -=1>>
+    Feil: “Such a tragedy of self-perception and reflection! Even a black hole has some swagger.”
+->“There’s no comparison to be made. The stars shine way brighter than little old me.”
+    Feil: “As impressive as they are, they can’t hold a conversation. Nor do they have the ability to make me laugh. You honestly need to give yourself some credit.”
+    <<set $affection -=1>>
+->“You kidding me? The stars never even stood a chance! They might light up our night’s sky but I’m lighting up this moment!”
+    Feil: “Oh-hoh-hoh! A response on par with a supernova! I’d better calm down before I make you my personal big bang.
+    <<set $affection +=1>>
+
+Feil: “Every time I gaze up at the stars, I can’t help but wonder… with the billions of galaxies, each containing billions of stars, with numerous planets orbiting them. How can we possibly be alone? Truthfully, do you believe sentient life exists beyond our speck in the universe?”
+->“There has to be! Our universe is too boundless for it to be just us.”
+    Feil: “I had a feeling that'd be your response. Your mind is open, expansive… like the cosmos itself. If I ever found life out there in the great beyond, I’d hope it was at least half as intriguing as the life beside me now.”
+    <<set $affection +=1>>
+->“I don’t know if life is out there, but I’d hate to be the first to find out… They could be dangerous.”
+    Feil: “Dangerous? Oh, I don’t doubt it. Encountering new life might feel less like a handshake and more like… dropping into a hostile hellscape with never-ending swarms of man-eating insects. But that’s the price we must pay for DEMOCRACY!!
+    Feil: (*coughs*) “ahem… I mean discovery. And if I ever charge headfirst into the unknown, I’d want you there, covering my back.”
+    <<set $affection +=1>>
+->“Yeah, fat chance there’s life out there pal. The stars are just little sky ornaments… nothing special.”
+    Feil: “Did you just say… Ornaments?”
+    Feil: “Please tell me you didn’t just say that.”
+    Player: “Uh, ummm… Yeah?”
+    <<Animate RTCrazy>>
+    Feil: “ORNAMENTS!?!”
+    Feil: “YOU DARE TO REDUCE THE COSMOS TO HOLIDAY DECOR!?!”
+    Feil: “I hope you get trapped in a mall with Mariah Carey’s,[br /]‘All I Want for Christmas Is You’ on loop. 
+    Feil: It’s not even Christmas,[br/]and this bimbo is talkin about *oRnAMenTS*."
+    Player: (*sullenly*) “Sorry Feil… you okay?”
+    <<Animate RTSad>>
+    Feil: “Honestly, I’m not even mad anymore… just disappointed.”
+    Player: (*thinking to yourself*) *Damn that hurt deep*
+    <<set $affection -=3>>
+
+Feil: “Space is seemingly infinite… Some planets with life may exist light-years away, far beyond humanity’s reach. But I can’t help but wonder…”
+Feil: “In our human relationships, does distance make connections weaker…” 
+Feil: “Or somehow stronger?”
+->“Distance is pretty rough, like chemical bonds…if the atoms aren’t close enough.”
+    Player: “Nothing can really happen.”
+    Feil:: “Ah, now that’s the way I think! Bonds, whether atomic or human, require proximity to create energy to spark interaction. I couldn’t have said it better myself.”
+    <<set $affection +=2>>
+->“I think distance can only hurt relationships, being close is the only thing that matters.”
+    Feil: “Oh…”
+    Feil: “You really need to calm down.”
+    Feil: “Even the strongest magnetic fields couldn’t contain that amount of clinginess.”
+    <<set $affection -=2>>
+->“I think distance can make our connections stronger. Being apart makes the moments spent together more meaningful.”
+    Feil: “What a superb response!. Even across great distances, there are bonds that persist is quite extraordinary!”
+    <<set $affection +=1>>
+
+Feil: (*gesturing toward a cluster of stars*) “Carl Sagan once said, ‘We are made of star stuff.’ Isn’t that just humbling? The atoms in our bodies were created in the hearts of stars long before we existed. This makes me wonder…”
+Feil: “In the infinite scale of the universe, what truly matters in our relationships?”
+->“I think in the grand scheme of the universe nothing truly matters but how we feel…”
+    Feil: (*Face slightly contorted*) “Just gonna stop ya right there.”
+    Feil: “As soon as you started talking I got a strong smell of cheese in the air.”
+    Feil: “I’d think it’d be better to talk about something else.”
+    <<set $affection -=1>>
+->“I believe having a connection is what matters in our relationships. Even if we are just stardust, we can make each other’s universes feel less empty.”
+    Feil: “Eloquently said!”
+    Feil: “You may not be an astrophyscist, but you understand the gravity of love.”
+    <<set $affection +=1>>
+->“I got a better question for you.”
+    Feil: “Oh!”
+    Feil: “What’s the question?”
+    Player: (*In a really obnoxious tone*) “iN tHE InFiNITE ScAle oF Teh oOonnIvERsE, tWaT TrooLY Mad-DaHs TiN owA rELaTiOnShIppsSs?”
+    Feil: “...”
+    <<Animate RTSad>>
+    Feil: (*Feil is now having a mental breakdown*)
+    Player: “Do ya get it now!?! 
+    Feil: FEIL!!!
+    Feil: (*tears swelling in his eyes*) “What did I do wrong?”
+    Player: (*Slowly you start speaking with an Italian accent*) “Porca Puttana, you're asking me too many questions, Feil.”
+    Feil: (*A few tears drip from his eyes, his voice shaky*) “What’s even happening right now?!”
+    Player: (*Now with a strong Italian accent*) “I ain’t no wiseguy, Feil. So if you keep askin me these domande cretine! We’re gonna start havin problems, capiche?”
+    Feil: (*Still sobbing slightly*) “...”
+    Player: “CAPICHE!?!”
+    Feil: (*Wipes his face*) “Fine… I’m just going to pretend this just didn’t happen.”
+    Player: (*Smirking*) “Ah, sei proprio un somaro cosmico!”
+    <<set $affection -=4>>
+    <<Animate RTIdle>>
+
+Feil: “In the grand scheme of the universe…”
+Feil: (*He pauses, blinking slowly, making a clear realization that he’s probably said the same thing a dozen times already tonight.*)
+Feil: (*He looks out the nearest window and sees a growing shade of orange in the night sky*)
+Feil: “...you’ve probably heard me say the same thing before.”
+Feil: (*He picks up his mug and takes a deep sip of his hot beverage*)
+Player: (*You’re thinking he’s going to start talking about some deep shit*)
+Feil: (*He quickly turns and meets you’re gaze, he’s got a huge grin on his face*)
+Feil: (*Super high pitch*) “BUT YOU KNOW WHAT NEVER GETS OLD!”
+Feil: (*Calmly*) “Black holes.”
+Player: (*You’re wondering what the hell is in his mug*)
+Feil: (*Back to normal seemingly*) “They’re these cosmic vacuums that don’t actually suck things up like they do in TV fiction. Black holes essentially warp spacetime itself.
+Feil: “Space flows inward just like a waterfall, and the crazy part is that even light can't climb back out!”
+Feil: (*Excitedly*) “Isn’t that just wild!?”
+Feil: (*He leans in weirdly close… you can feel his breath hit your face*)
+Feil: (*His breath smells like dirt and something fermented*)
+Feil: “Would you… wanna know more about that?”
+->(*Starting to feel moderately concerned, voice is a little shaky*) “Of course black holes sound cool Feil. I would love to know more…”
+    Feil: (*His pupils dilate to the max*)
+    Feil: “Yes, I knew you’d understand! That curiosity is what our cosmos craves!”
+    Feil: (*He sets his mug down gently, his hands trembling*)
+    Feil: “You can clearly see… it’s all connected!”
+    Feil: “Stars die, collapse, becoming black holes… that might not be the end but a new beginning.”
+    Feil: “Maybe love is the same way… It can pull you in, break you down, but it’s all just the start of something larger.”
+    <<set $affection +=1>>
+->(*Dead serious*) “Not really, I think you should calm down.”
+    Feil: (eyes widen slightly; he straightens his posture and fixes his imaginary bow tie*) 
+    Feil: “Ahhh. Yes, you’re right I appear to be functioning on a new level right now.”
+    Feil: (*His eyes lock onto his mug for two whole minutes*)
+    Feil: (*He locks back in*) “I’ll write down a reminder to switch to decaf nebula roast.”
+    Feil: (*He starts writing on a post-it, then slaps it down on his desk*)
+    Player: (*You look at the post-it, and it only has two words written on it*)
+    Player: (*It reads: BING BONG*)
+    Player: (*You become a little more concerned about Feil’s well-being and are wondering what the hell is in the nebula roast*)
+->“You know, black holes take things in because the matter just follows the curvature of spacetime.”
+    Feil: (*Coldly*) “What the hell are you trying to do right now!?”
+    Player: (*Timidly*) “What… I was just trying too…”
+    Feil: (*He proceed to put his face right up against yours*)
+    Feil: (*Sternly*) “I’m the science guy here, pal!”
+    Feil: (*Sternly*) “And if you ever try some shit like that again… there’ll be hell to pay!
+    Feil: (*Calmly*) “Now look me in the eyes and apologize."
+    Player: (*You see that Feil’s pupils are now fully dilated.)
+    Player: (*Petrified*) “Sorry sir…”
+    Feil: (*Feil backs up and gives you your space back finally*)
+    Feil: Apology accepted, let’s move on.
+    <<set $affection -=1>>
+
+Player: (*You finally come to the realization that Feil’s mug contains some sort of hallucinogenic drug*)
+Player: “Hey, Feil…”
+Player: “Buddy, what’s in the mug?”
+Feil: “You know… we’ve talked a lot about the universe, the stars, gravity, and all that stuff that’s supposed to make us feel small.”
+Player: (*Feil just completely ignored what you said*)
+Feil: (*Feil chuckles softly, then looks down at himself, flexing slightly.)
+Feil: "However, as of late... I've been giving less consideration to the universe..."
+Feil: (He looks at you with a worried but genuine expression) "...and more about the gravitational pull between us."
+Feil: "So, how do you feel about me in the expanse of the universe?"
+
+<<if $affection >6>>
+Player: “You’re everything I’ve been looking Feil, let me have some of the “coffee” from your mug and let’s go on a cosmic adventure!”
+<<Animate RTHappy>>
+Feil: (*Smiling brightly*) I’d thought you’d never ask!
+<<Animate RTKiss>>
+Feil: (*He gives you a sip, and a kiss! Congrats you romanced Feil the GrassWrightThumb*)
+<<else>>
+Player: (*Sullenly*) “Look Feil, you're a very knowledgeable guy… but I don’t see an us.”
+Feil: (*His bright and vibrant face turns blue*) “Oh…”
+<<Animate RTSad>>
+Feil: (*Tears in his eyes*) “No cosmic connection here… *sniffle* not mutual. These things happen.”
+Feil: (He looks back out the window, the orange glow reflecting in his eyes)
+Feil: Guess I’ll have to look else where in this vast universe…
+<<endif>>
+<<StopAnimation>>
 <<jump Menu>>
 ===

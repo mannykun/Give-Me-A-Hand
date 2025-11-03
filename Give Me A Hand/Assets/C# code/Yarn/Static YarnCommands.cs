@@ -75,22 +75,22 @@ public class Animation
         if (Emotion != null)
         {
             SpriteRenderer emotionSprite = Emotion.GetComponent<SpriteRenderer>();
-            Animator emotionAnimation = Emotion.GetComponent<Animator>();
+            //Animator emotionAnimation = Emotion.GetComponent<Animator>();
             SpriteRenderer lastEmotion;
-            Animator lastAnimation;
+            //Animator lastAnimation;
 
 
             lastEmotion = currentEmotion;
-            lastAnimation = currentAnimation;
+            //lastAnimation = currentAnimation;
             currentEmotion = emotionSprite;
-            currentAnimation = emotionAnimation;
+           // currentAnimation = emotionAnimation;
             currentEmotion.enabled = true;
-            currentAnimation.enabled = true;
+            //currentAnimation.enabled = true;
             Debug.Log(Emotion + " is now active");
             if (lastEmotion != null)
             {
                 lastEmotion.enabled = false;
-                lastAnimation.enabled = false;
+                //lastAnimation.enabled = false;
                 Debug.Log(lastEmotion + " is no longer active");
             }
         }
@@ -104,12 +104,12 @@ public class Animation
         if (currentEmotion != null)
         {
             SpriteRenderer emotionSprite = currentEmotion.GetComponent<SpriteRenderer>();
-            Animator emotionAnimation = currentEmotion.GetComponent<Animator>();
+            //Animator emotionAnimation = currentEmotion.GetComponent<Animator>();
             emotionSprite.enabled = false;
-            emotionAnimation.enabled = false;
+            //emotionAnimation.enabled = false;
             Debug.Log(emotionSprite + " is no longer active");
             currentEmotion = null;
-            currentAnimation = null;
+            //currentAnimation = null;
         }
     }
 }
