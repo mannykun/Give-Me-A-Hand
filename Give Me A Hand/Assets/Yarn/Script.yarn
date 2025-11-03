@@ -1,15 +1,8 @@
 ﻿title: Start
 position: -78,-506
 ---
-<<declare $demo = 0>>
 <<declare $affection = 0>>
 <<declare $ToeAffection = 0>>
-
-Demo mode?
-->Yes
-    <<set $demo = 1>>
-->No
-    <<set $demo = 0>>
 
 Welcome to Give Me a Hand!
 <<jump Menu>>
