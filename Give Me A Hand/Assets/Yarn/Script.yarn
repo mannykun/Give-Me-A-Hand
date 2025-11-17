@@ -159,11 +159,93 @@ Thumb: Right now, my gymnastics class is in the middle of our sign language unit
     Thumb: You may be mocking me… and my teaching style for that matter, but discipline begins with the fundamentals. Even the humble thumbs-up requires a great deal of balance and endurance.
 ->Flexibility is key for you… or rather, for us. After all, mastery of the distal interphalangeal must be the pinnacle of control.
     <<set $affection +=1>>
-    Ah! Finally, someone who understands true finesse. Most overlook the distal interphalangeal, yet it governs the subtlety of every pose, the precision of every flip. You may yet survive my sign language unit unscathed… if you keep that attention to detail.
+    Thumb: Ah! Finally, someone who understands true finesse. Most overlook the distal interphalangeal, yet it governs the subtlety of every pose, the precision of every flip. You may yet survive my sign language unit unscathed… if you keep that attention to detail.
 ->So, what’s the big end of the unit test?
     Thumb: Currently I’m planning on having my students sign in great detail what routine they will be performing and then performing it.
     How about signing the alphabet?
     Thumb: Interesting idea, but signing the alphabet on its own is easy. Instead I think I’ll have my students balance on one finger while spelling the alphabet.
+
+Thumb: You know, most people misunderstand my sign language unit. It’s also about choreography, not just about flexibility. Every bend of a joint carries such an incredible grace with it! A singular sloppy bend of the proximal phalanx can throw off the entire routine. Now tell me, what do you know of the art of sign language?
+->Oh I know about sign language, I once sprained one of my old fingers inside my ex’s… yeah… Does that count as art?
+    Thumb: “You think that counts as art? As… interesting… as that sounds, your amateur performance left you with a misaligned proximal interphalangeal joint… There’s nothing artistic about that!”   
+    <<set $affection -=1>>
+->Enough to know that mastery lies in the rhythm of the fingers, precise and swift movements are critical.
+    Thumb: Very well, splendid answer.
+    I’ve also been told my technique is impeccable.
+    Thumb: Impeccable you say? I truly admire the confidence
+    I’d love for you to admire my technique as well… How about… after dinner?
+    Thumb: After dinner you say? I suppose we can arrange something if you leave a favorable impression.
+    <<set $affection +=1>>
+->I know it involves a lot of hand movement… and unfortunately mine tend to cramp up easily.
+    Thumb: Cramping is merely a temporary setback. With enough discipline and practice, even the most stubborn of fingers can learn to move with precision and elegance.
+
+Thumb: We’ve covered fundamentals, history, and a few advanced finger contortions. Before we move on, tell me… do you have any questions about the unit?
+->Yes… I have many… 
+    Thumb: “Do ask, please.”
+    “…But only if you’re willing to give me private, hands-on lessons. I think I could improve a lot faster with one-on-one guidance from a true expert like you.”
+    Thumb: “Hands-on, you say? Hah… very well. But understand this: true mastery requires discipline, focus, and impeccable form. I cannot be held responsible for the consequences of sloppy finger placement… though I suppose only the most dedicated pupils may deserve some… private lessons.”
+    <<set $affection +=1>>
+->Is there extra credit for style, or is this purely about the fundamentals?
+    “Style, of course, is admired… but execution reigns supreme. A flawless display without flair is what I look for most. Only the truly skilled can achieve both flashiness and precision.
+->Do I have to sign actual words?
+    Thumb: “Please elaborate, if you care to of course.”
+    “Can I just make up my own finger squiggles and call it art?”
+    Thumb: “Squiggles? Art? Do you think I dedicated my life to the teaching of gymnastics just for my students to belittle the art with nonsensical movements? I will not allow it. However, I will admire any creativity.”
+    <<set $affection -=1>>
+
+Enough about my academic endeavors, I would like to know about yours now. Tell me, what area of study speaks to you the most?
+->My current academic interests consist of gymnastics, particularly its history and this sub-unit called sign language.
+    Thumb: “Hmm? It must be time for you to enroll into my classes. You know Yale offers mu–” 
+    (You interrupt them, smiling) Actually, the more I think about it, my academic interests include… you…
+    Thumb: “Hmm… Your attempts to flatter me won't earn you any extra credit. However, your participation grade is certainly going up.”
+    <<set $affection +=1>>
+->I’ve been applying for grad school and I’m stuck between Harvard and Columbia. What do you think about those schools?
+    Thumb: “Hmm… Bright institutions for sure, but the people that emerge from there are too enamored with their own prestige. Let’s just say I’ve had the misfortune of working with a certain individual who went to both… Aim for places that value your skill over your reputation.”
+    <<set $affection -=1>>
+->I don’t know yet, I’m on a gap year.
+    Thumb: “Hmm..I see… Well I guess sometimes a time to rest and reflect is how we bring out the best in oneself.” 
+
+Thumb: As our time here comes to an end, it’s only right that I give you a pop quiz on today’s lecture. Now beware… This quiz is worth 25% of your grade! Answer correctly, and you may earn my approval… or at least avoid my disappointment. (Quiz time, ends if any question is answered incorrectly, - affection for every remaining question) 
+Question 1:  Where do I teach?
+->Columbia University
+    Thumb:“You really weren’t paying attention, were you? I mean, it was one of the first things I said! You showed some promise, but clearly lack the attention span for my class.”
+    Thumb: Wrong
+    <<set $affection -=1>>
+->Yale
+    <<set $affection +=1>>
+    Thumb: Correct
+    Thumb: “Alright, that was an easy one, but even the simplest questions can reveal who is paying attention. Now, don’t get too cocky” 
+->Harvard
+    Thumb: Wrong
+    <<set $affection +=1>>
+    “You really weren’t paying attention, were you? I mean, it was one of the first things I said! You showed some promise, but clearly lack the attention span for my class.”
+Thumb: Question 2: What am I currently teaching to my gymnastics class?
+->Sign language
+    Thumb:Correct
+    <<set $affection +=1>>
+    Thumb:“Alright, now you’re really showing that promise I originally saw in you. I saved the hardest for last… so don’t get too comfortable yet.” 
+->Finger painting
+    Thumb:Incorrect
+    <<set $affection -=1>>
+    Thumb:“While I refer to what I teach as art, this is not the type of art I meant.”
+->Toe curling
+    Thumb:Incorrect
+    <<set $affection -=1>>n
+    Thumb:“I am literally a finger, not a podiatrist. Perhaps you should reconsider what you think you’ve been learning.”
+Question 3: The first modern Olympic appearance for gymnastics as a sport was during which Olympic Games?
+->2020 Olympic Games
+    Thumb:Incorrect
+    <<set $affection -=1>>
+    Thumb:“2020? The year that the Olympics nearly got canceled due to a global pandemic? Modern, yes, but that’s too modern. I appreciate the confidence, but perhaps next time, try listening instead of guessing.
+->1924 Olympic Winter Games
+    Thumb:Incorrect
+    <<set $affection -=1>>
+    Thumb:“The Winter Olympics? I… what… how would that even work? Do you imagine athletes cartwheeling through snowdrifts?”
+->1896 Olympic Games
+   Thumb: Correct
+   <<set $affection +=1>>
+   Thumb: “Excellent! It’s refreshing to see a pupil who actually retains information rather than letting it get lost in the wind instead. Consider me… impressed.”
+
 
 Thumb: Well that concludes your quiz and our lesson. 
 Thumb: I must say… you fared better than I anticipated.[br /]Your attentiveness,  or lack thereof, has been duly noted. 
