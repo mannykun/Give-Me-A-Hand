@@ -488,6 +488,7 @@ title: EugeneLR
 position: -411,331
 ---
 <<set $affection = 0>>
+<<Swap Office>>
 Background: It’s 7:30 p.m., the perfect time for an interview, apparently. The office is nearly empty by the time you arrive, and most of the lights are off. Throughout the dark office building, one room is still illuminated. 
 A dim glow trickles out of Conference Room E, the location of your interview. As you inch closer towards the door, you start to feel a little nervous. You take a deep breath and swallow your nerves before entering the conference room.
 Once inside, you’re met with the sight of a single overhead light, and the interviewer seated directly beneath it, his belly nearly swallowing a wedding ring that he keeps nudging back into place.
