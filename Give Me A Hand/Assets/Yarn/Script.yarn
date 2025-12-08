@@ -1,5 +1,5 @@
 ﻿title: Start
-position: -78,-506
+position: -209,-544
 ---
 <<declare $affection = 0>>
 <<declare $ToeAffection = 0>>
@@ -8,8 +8,9 @@ Welcome to Give Me a Hand!
 <<jump Menu>>
 ===
 title: Menu
-position: -114,-294
+position: -218,-323
 ---
+<<StopAnimation>>
 <<Swap startMenu>>
 <<musicOn Jazz_Theme>>
 Who would you like to go on a date with?
@@ -19,9 +20,11 @@ Who would you like to go on a date with?
         <<jump EugeneLR>>
 ->Right Thumb
         <<jump Feil>>
+->Right Pointer
+        <<jump PennyRP>>
 ===
 title: Tum
-position: -440,-118
+position: -495,-165
 ---
 <<Swap Restaurant>>
 <<set $ToeAffection = 0>>
@@ -87,7 +90,7 @@ Thumb makes their way to Tum’s old seat and carries on as if nothing just happ
 <<jump LeftThumb>>
 ===
 title: LeftThumb
-position: -435,71
+position: -500,6
 ---
 <<set $affection = 0 -($ToeAffection/2)>>
 Thumb: “Sorry I’m late,[br /]A student needed me in office hours for a bit longer than I expected,[br /]had to get on the next train instead.” 
@@ -206,7 +209,7 @@ Enough about my academic endeavors, I would like to know about yours now. Tell m
 ->I don’t know yet, I’m on a gap year.
     Thumb: “Hmm..I see… Well I guess sometimes a time to rest and reflect is how we bring out the best in oneself.” 
 
-Thumb: As our time here comes to an end, it’s only right that I give you a pop quiz on today’s lecture. Now beware… This quiz is worth 25% of your grade! Answer correctly, and you may earn my approval… or at least avoid my disappointment. (Quiz time, ends if any question is answered incorrectly, - affection for every remaining question) 
+Thumb: As our time here comes to an end, it’s only right that I give you a pop quiz on today’s lecture. Now beware… This quiz is worth 25% of your grade! Answer correctly, and you may earn my approval… or at least avoid my disappointment. 
 Question 1:  Where do I teach?
 ->Columbia University
     Thumb:“You really weren’t paying attention, were you? I mean, it was one of the first things I said! You showed some promise, but clearly lack the attention span for my class.”
@@ -289,7 +292,7 @@ Thumb: Now, for your overall grade. Would you like to know?
 <<jump Menu>>
 ===
 title: Feil
-position: 137,-18
+position: 2,-69
 ---
 <<set $affection = 0>>
 <<Swap Observatory>>
@@ -482,8 +485,9 @@ Feil: Guess I’ll have to look else where in this vast universe…
 <<jump Menu>>
 ===
 title: EugeneLR
-position: -167,2
+position: -411,331
 ---
+<<set $affection = 0>>
 Background: It’s 7:30 p.m., the perfect time for an interview, apparently. The office is nearly empty by the time you arrive, and most of the lights are off. Throughout the dark office building, one room is still illuminated. 
 A dim glow trickles out of Conference Room E, the location of your interview. As you inch closer towards the door, you start to feel a little nervous. You take a deep breath and swallow your nerves before entering the conference room.
 Once inside, you’re met with the sight of a single overhead light, and the interviewer seated directly beneath it, his belly nearly swallowing a wedding ring that he keeps nudging back into place.
@@ -744,4 +748,225 @@ You leave the office with a sense of pride and accomplishment. You should be exc
 <<endif>>
 <<StopAnimation>>
 <<jump Menu>>
+===
+title: PennyRP
+position: 124,81
+---
+<<set $affection = 0>>
+<<Swap Waterpark>>
+Background: The fluorescent lights flicker like they’re on their last legs, casting half-shadows across the tiled bathroom. The scent of chlorine and lemon cleaner hangs thick in the air—unmistakably the smell of a waterpark after hours.
+Background: Through the walls, you can hear the faint hum and rush of water slides and fountains still running in the otherwise empty Tinkle Town Water Park. The echo makes the silence of the bathroom feel even louder.
+
+//Intro Dialogue
+
+Player (to themselves) :Great… locked in the bathroom after hours… in Tinkle Town of all places.
+Player (to themselves):Perfect… *long sigh*
+You rattle the door's handle again to no avail and start banging on the door.
+Player: HELLO!?!?!
+Player: IS ANYONE THERE!?!
+Player: I NEED HELP… I’M TRAPPED IN HERE!!
+Dead silence, you couldn’t even hear a pin drop.
+You take a long, deep breath and prepare to kick down the door.
+Player: AAAAHHHH!!!
+Just as your foot hits the door with all of your weight and strength behind it… the lock clicks open.
+The door BLASTS outward at an unforgiving speed and nails someone directly on the other side.
+<<Animate RPIdle>>
+Penny: EEIIGHHHHH!?!
+Player: HOOLLLYYY SHHHIIIITTTT?!?
+You watch in slow-motion horror as a pointer finger dressed as a lifeguard is airborne and being launched back to the swimming area…
+The door swings closed, and in that instance, you hear a loud SMACK!
+You force the door open and see the pointer finger unconscious and slowly rolling into the pool.
+
+//Dialogue Choices For Interaction 1:
+
+//Choice 1 (+): 
+->Rush to her aid and pull her out of the pool.
+    She sinks into the pool as you rush into action.
+    You dive in after her, pulling up and out of the water.
+    She’s unconscious still and you notice… SHE ISN’T BREATHING!
+    You prepare to start CPR even though you have little to no idea what you’re doing.
+    Just as you're about to start, she wakes up and clocks you with an uppercut. Sending you flying onto your back.
+    Penny: WHOOTH THA FUCK ARE YOU?!
+    Your laying down on your back still in a daze and you bit your tongue when she layed you out.
+    Player: I’M THO THORRY! *wincing in pain*
+    Player: I wath tha one who wath trapped in tha bathroom.
+    Penny glares at you, arms crosses, still dripping water on the floor.
+    Penny: THO! You’re tha one who flung tthhat door at me! I thought you wereth a prankther trying to thabotage my thlide.
+    Player: No! I wath just trapped in the bathroom… I wath juth trying to help!
+    Penny blinks at you, her foot tapping the wet tiles rapidly, impatient rhythms, like a metronome set to “danger”.
+    Penny: Hmph…
+    Penny: Thith… Thith I can deal with. But next time, DON’T FLING DOORTH AT ME! I needth to protect tha thlides, and I can’t do that if I’m dead!
+    Penny’s chest rises and falls in sharp, irritated breaths. Water drips off her lifeguard whistle like it’s judging you too.
+    Player: I’m thorry.. *cough*
+    The swelling from biting your tongue starts to fade
+    Player: I meant to say, I’m sorry... I really wasn’t messing with the slides though, I promise.
+    Penny narrows her gaze at you, her foot tapping faster.
+    She suddenly stops.
+    Penny: Hmph. Fine. Jutht… don’t do anything thtupid again. You almotht gave me a heart attack AND a concuthion.
+    She adjusts her small red lifeguard floatie strapped to her back, still giving you an intense glare.
+    Penny: Now the real question ith.. Why were even in the bathroom AFTER hourth!?
+//Goes into Intercation #2
+
+//Choice 2 (☠️): 
+->Look for a way out of Tinkle Town Water Park.
+    You freeze for a moment, watching on at the pointer finger slowly but surely sinking into the pool.
+    You don’t even think about saving her, you just don’t want to be caught trespassing in the park after hours. That really made your stomach twist into knots… not the fact that you might’ve just killed someone.
+    After around an hour of searching you find an exit, but there’s a security guard just on the other side of the door…
+    //SUB Choice 1(+☠️): 
+    ->Another kick should do the trick
+        You glare at the security guard through the glass door, and you know the one thing that’s worked well for you tonight.
+        Kicking things really, really hard.
+        You take some steps back then beat your chest hard a couple times, hyping yourself up.
+        The guard slowly starts turning around to see what animal is lurking behind him.
+        The guard’s confused expression turns into pure fear and dread as he see’s you in a fall charge heading for the door, then…
+        BAAMMMM!! CRASH!!!
+        The door proceeds to fly off its hinges, taking the guard with it as glass spatters all over the pavement.
+        After a few seconds of flight, the guard and door are launched a few feet back and then smack onto the pavement.
+        You start to cackle under your breath
+        Player:THAT’S WHY WE DON’T SKIP LEG DAY SON! HA HA!
+        You continue your escape by carjacking a nearby van filled with senior citizens and drive off.
+        [Years Later]
+        You’ve built a life for yourself, a peaceful one.
+        You almost forgot about the waterpark
+        You almost forgot about the guard
+        And you most definitely forgot about the unconscious pointer finger you let slide into the pool.
+        However, Karma has a way of sneaking up on you.
+        One day you receive a fateful knock on your door.
+        It’s the police, with the kind of grim and unforgiving expressions usually reserved for murderers and psychopaths.
+        Police:We’ve got some questions for ya…
+        Police:it’s about Tinkle Town Water Park.
+        They proceed to layout all the evidence they’ve got against you. 
+        They show you the security footage in the water park, and in the parking lot.
+        They also made sure you got to see your legendary kicks in action.
+        What you didn’t know was that your legendary kicks were a bit too legendary. They actually killed both Penny and the guard stationed at the door.
+        You never even had a chance to defend yourself and the case went viral across all major news stations.
+        You are sentenced to death by the state, and live out your few remaining days locked up in a maximum security prison.
+        But man, those were some nice kicks weren’t they.
+        [GAME OVER:“FAILED ESCAPE” ☠️]
+        <<jump Menu>>
+    //SUB Choice 2(💀): 
+    ->Try to sneak past
+        You sneak as quietly as you possibly can, holding you’re breath and concentrating on every step.
+        The guard doesn’t even blink… because he’s been genuinely confused of what you’re trying to do, he’s been watching you make a fool of yourself the entire time.
+        Guard:What in the hell are you doing?!
+        Guard:Only an absolute freak would be camping in a water park of all places… GET YOUR ASS OVER NOW!!!
+        You’re now taken into police custody and are taken into the park’s office, where they also discover the surveillance footage of your “incident”.
+        You’re charged with involuntary manslaughter and trespassing, and now you get to spend some years in a local state penitentiary to reflect on your actions. 
+        [GAME OVER:CAUGHT ☠️]
+        <<jump Menu>>
+    //SUB Choice 3(💀): 
+    ->Try to bribe him
+        You dig through your pockets and offer the guard three nickels and a dime.
+        He looks at you for a moment
+        Then looks at the change in your misfigured hand
+        He then looks back at you, his expression concerned
+        Guard:It’s ok pal, no need to be worried… Did you loose you’re care taker?
+        The guard genuinely believes you are senile.
+        Guard:Don’t you worry now, just come with me and we’ll get you sorted out.
+        Before you can even get a word out, he gently guides you into a bright pastel van parked nearby.
+        The van smells like lavender and old disinfectant that leaves an unsettling taste in your mouth. You’re surrounded by a grumpy group of seniors.
+        The van gradually starts to pull away, the guard smiles at you and you begin to realize that your daring “escape” has ended… not in freedom, but at the Sunset Serenity Home for the Easily Confused.
+        [GAME OVER:“RETIRED”☠️]
+        <<jump Menu>>
+
+//Dialogue Choices For Interaction 2:
+Her gaze intensifies even more, tracking all of your body’s movements.
+Penny:And don’t even try lying.
+Penny:(*In a Liam Neeson “Taken” voice*) I CAN THMELL FEAR…
+
+//Choice 1 (☠️): 
+->Lie.
+    Player:I was trapped… I can’t lie about that.
+    Player:But also… I’m actually the, uh…
+    Player:The Official Tinkle Town SAFETY INSPECTOR!
+    Penny freezes, her whistle stops mid-jiggle. A single drop of water freezes on her lifeguard vest like someone just clicked pause on her reality.
+    …The what?
+    Player:The Safety inspector! I inspect… the slides, pipes, and the bathrooms… for safety things!
+    Penny:Really… Really?
+    She hustles away into an office and comes back with a clipboard.
+    Penny:Then I’d like you to tell me… who ith thith?
+    On the clipboard is a photo of the real safety inspector: It’s a bald man with no teeth… except for one lonely yellow fang. His eyes are bloodshot and one of his eyes seems to be permanently locked onto the floor. 
+    Penny:You thee thith guy?
+    Penny:That’s our safety inspector. Used to be a heavy crack addict.
+    Penny:Now you’re telling me… that you’re this guy?
+    Player:Uhhh… well… I mean… I–
+    Penny narrows her eyes into your very soul. She’s trembling with judgement.
+    Penny:I KNEW I THMELLED FEAR FROM YOU!?!
+    She then takes off her small lifeguard floatie and hooks you around the neck with it.
+    Penny:GET OVER HERE!
+    She yanks you towards her, choking you out in the process, then follows up the attack with a devastating right hook to the jaw.
+    As your consciousness slowly fades… you hear Penny mutter one last thing.
+    Penny:How’th the floor tathe… Bithch.
+    [GAME OVER:LIAR☠️]
+    <<jump Menu>>
+
+//Choice 2 (+): 
+->Tell her the truth.
+    Player:I was trapped in there… I was doom scrolling for a couple of hours and someone must’ve accidentally locked me in.
+    Player:So I kinda panicked and in a last-ditch effort… I, uhhh.. kicked the door really hard. 
+    Player:I really wasn’t trying to hurt you... I was just desperate to get out, I swear.
+    Penny eyes you up and down, judging your response.
+    Penny:Hmph…
+    Penny:The truth cometh out. I apprethiate the hon-ethty.
+    She exhales, the tension from the situation slowly starts to dissipate. She’s still dripping water and is a bit intimidating, but now… she’s slightly less murderous.
+    //Goes into Interaction #3
+
+
+//Dialogue Choices For Interaction 3 (Final Interaction):
+
+Penny:Ttho... you swear you weren’t going to thabotage my thlides?
+Player:No! I swear! I was literally just… trapped.
+She then picks up a small and soggy lifeguard vest, it just barely covers your chest. It smells like mold and chlorine.
+Penny:Okay… thine. I believe you.
+Penny:But you’re NOT getting off so easy. You almotht KILLED me!
+Penny:If ya help me check on all the thlides, maybe I’ll let ya oth the hook.
+Player:Got it! I’ll do my best to help in whatever way I can!
+Penny grins a little, though it looks more like a predator enjoying a slightly confused snack than anything friendly. You, however, feel like you just dodged a hurricane disguised as a finger.
+:You follow Penny as she does numerous routine checks, you kind of just stand there most of time taking in all the weird and surprising information about slide maintenance. She then marches you to the top of Tinkle Town’s largest attraction: THE GOLDEN TORRENT.
+It spirals down three stories into a yellowish-colored pool.
+Penny:Alright. Lithen up, rookie.
+Penny:Thith thlide is our biggith attraction here, ttho we can’th metthh thith up.
+Penny:I need you to twith the launch valve while I go thecure the landing thone.
+Player:The launch valve?
+Penny:YETH! The big RED one.
+Penny:DO! NOT! TOUTHH! ANYTHING ELTH!
+Penny:Got it?
+Player:I got it!
+She quickly slides along the rail of the stairway, making her way to the landing zone.
+Penny:(*From Below*) OKAY! TWIST THE VALVE!
+Oh and by the way… You’re totally color blind. You really should’ve mentioned that. Good Luck! 😈
+
+//Choice 1 (+): 
+->Twist the Muted Colored Valve
+    You remember Penny’s instructions and lock in.
+    You slowly turn the Muted Colored Valve, and touch nothing else.
+    Penny:YOU DID IT! GREAT JOB UP THERE!
+    You twist the valve back into it’s original positon and make your way down back to Penny.
+    Penny:We could hath a real problem on our handth if you messed with other valve.
+    Before you could even react, she plants a quick kiss on your cheek.
+    Penny:Don’t get cocky… improper uthe of thlides can cauthe real harm. But you did a good job today, rookie.
+    You survived Penny Pointerson… and somehow, she’s impressed.
+    [SUCESSFUL ROMANCE ENDING: SLIDE CERTIFIED ❤️]
+    <<jump Menu>>
+	
+//Choice 2 (☠️): 
+->Twist the Muted Green Valve
+    Player:It’s for sure this one… I think?
+    Famous Last Words…
+    You twisted the incorrect valve.
+    The pipes leading to the valve start to hiss loudly as the pressure within them starts to increase.
+    Penny:(*In a terrified/trembling tone*) What hath you done, you fool…
+    Suddenly, the facility erupts into chaos. Pipes burst with a deafening roar, spraying water in every direction.
+    One pipe, meant to regulate water temperature, shatters, spewing a scalding, flammable liquid.
+    Sparks from a metal bolt ignite the substance, turning the pipe into an impromptu flamethrower, shooting fire across the room.
+    Flames roar and scalding liquid hisses across the floor, engulfing everything in chaos.
+    As the inferno reaches Penny, she doesn’t even scream. She just locks her eyes onto you with a fury that no mere mortal could comprehend, she’s then swallowed by the fire and smoke.
+    You, however make your way to the very top of The Golden Torrent. Covering your face with the small life vest to avoid breathing in the overcrowding smoke.
+    The chaos roars below, but you hear a distant whop of a helicopter blades that cuts through the roar.
+    You’ve made it to the top, completely out of breath and a little singed from the flames. Just in time the rescuers from the helicopter break through the skylight and pick you up from the top of the slide just as the facility starts to crumble down.
+    You’ve managed to escape the chaos of your own creation, while Penny becomes yet another casualty of your misadventure.
+    Your also now paranoid that Penny will get her revenge from beyond the grave.
+    [GAME OVER: BAD ENDING]
+    <<jump Menu>>
+
 ===
