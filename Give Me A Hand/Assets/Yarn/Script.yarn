@@ -15,6 +15,8 @@ position: -114,-294
 Who would you like to go on a date with?
 ->Left Thumb
         <<jump Tum>>
+->Left Ring
+        <<jump EugeneLR>>
 ->Right Thumb
         <<jump Feil>>
 ===
@@ -29,7 +31,7 @@ Your date is late! They were supposed to be here 17 minutes ago!
 *Are they even going to show up? Am I getting stood up right now?* 
 As the thoughts start to sting, a broad silhouette emerges through the doorway[br /]and approaches in your direction. 
 They sit down across from you, but something about them feels… off.
-<<Animate Tum>>
+<<Animate Toe>>
 
 Mysterious Stranger: “...” 
 The silence echoes as it stares at you with the blankest of stares. 
@@ -60,7 +62,6 @@ How does one respond to I am Tum???
 It continues to stare at you,[br /]not a single thought visible through those eyes
 *This thing’s weirding me out,[br /]I don’t even know what to say back anymore*
 ->Well uhhh… Tum…[br /]Do you have any sort of hobbies that don’t involve staring at people?
-    <<Animate TumLisa>>
     Tum: “I like to finger painting. Mona Lisa my favorite”
     Your jaw drops to the floor in disbelief, almost instantly.[br /]*I need to get out of here*
     <<set $ToeAffection += 1>>
@@ -230,7 +231,7 @@ Thumb: Question 2: What am I currently teaching to my gymnastics class?
     Thumb:“While I refer to what I teach as art, this is not the type of art I meant.”
 ->Toe curling
     Thumb:Incorrect
-    <<set $affection -=1>>n
+    <<set $affection -=1>>
     Thumb:“I am literally a finger, not a podiatrist. Perhaps you should reconsider what you think you’ve been learning.”
 Question 3: The first modern Olympic appearance for gymnastics as a sport was during which Olympic Games?
 ->2020 Olympic Games
@@ -291,7 +292,7 @@ title: Feil
 position: 137,-18
 ---
 <<set $affection = 0>>
-<<Swap Restaurant>>
+<<Swap Observatory>>
 The observatory has a subtle fragrance of old paper and coffee. 
 A single beam of moonlight shines through the skylight,[br /]and the air is filled with the quiet hum of machines. 
 Feil the Grass-Wrighthumb stands at the telescope,[br /]moving dials about with an excessive flourish. 
@@ -476,6 +477,270 @@ Feil: (*His bright and vibrant face turns blue*) “Oh…”
 Feil: (*Tears in his eyes*) “No cosmic connection here… *sniffle* not mutual. These things happen.”
 Feil: (He looks back out the window, the orange glow reflecting in his eyes)
 Feil: Guess I’ll have to look else where in this vast universe…
+<<endif>>
+<<StopAnimation>>
+<<jump Menu>>
+===
+title: EugeneLR
+position: -167,2
+---
+Background: It’s 7:30 p.m., the perfect time for an interview, apparently. The office is nearly empty by the time you arrive, and most of the lights are off. Throughout the dark office building, one room is still illuminated. 
+A dim glow trickles out of Conference Room E, the location of your interview. As you inch closer towards the door, you start to feel a little nervous. You take a deep breath and swallow your nerves before entering the conference room.
+Once inside, you’re met with the sight of a single overhead light, and the interviewer seated directly beneath it, his belly nearly swallowing a wedding ring that he keeps nudging back into place.
+
+
+//Opening Dialogue Under the name of interviewer until he introduces himself
+<<Animate LRIdle>>
+Interviewer: In a shakier voice than you expected “Oh, uh, good evening. Please, have a seat.”
+You take a seat across from them.
+The interviewer adjusts his posture as he nudges at his wedding ring before clearing his throat.
+Interviewer: “I, uh, appreciate you coming in tonight. It’s, uh, not exactly the most convenient time for this… Matter of fact, I should probably be attending to other responsibilities…” 
+He pauses for a moment before recomposing himself. You can tell something is clearly bothering him.
+Interviewer: “Anyways, uh, My name is Eugene E. Lope. Not only will I be interviewing you today, I, uh, also happen to be the boss around here.”
+A bit of shock moves throughout your body, you were not aware of that little detail at all.
+Eugene: “I, uh, I’m sorry for not making you aware of that beforehand…”  
+Eugene looks down at a paper on his desk. When he looks up, he smirks at you before recomposing himself again.
+Eugene: “Anyways, we, uh, will treat this like any other interview. I would like for you to uh, give me a sense of who you are, your experience, and uh, why you’re interested in working with us.”
+
+
+//Dialogue Choices:
+
+Eugene: “So please… whenever you’re ready, uh, why don’t you tell me a little about yourself.”
+->“Why don’t YOU tell me a little about yourself.”
+    Eugene gives a shocked look before taking a couple seconds to recompose himself.
+    Eugene: “Well, I uh, I’ve already told you everything that you need to know about me. This is a professional interview for crying out loud.”
+    “No no… I insist. Please, tell me more about yourself, Eugene.”
+    You point towards the ring, making it clear that's what you want him to tell you about. 
+    Eugene: “This? I’ve, uh, got a son with my beautiful wife of 23 years. Actually, I uh, have a picture of them right here, let me find it really qui–”
+    Rudely interrupting “That won’t be necessary, and they won’t be important right now… Right now it’s just me and you, Eugene… as it should be.”
+    Eugene smirks at you as if he’s about to start playing along.
+    Eugene: “Such a bold first impression… and a good one at that. I, uh, almost forgot this was even a job interview for a second. Anyways, I uh, think we should move on.”
+    <<set $affection +=1>>
+->“I’m very desperate for a job right now”
+    Eugene gives you a funny look and nods in acknowledgement
+    Eugene: “While I uh, appreciate the honesty, I don't think desperation counts as a qualification. I uh, think we should move on to what you can bring to the team instead.”
+    //Neutral 
+->“Actually, I’ve got a question before we start.”
+    “Why did this interview have to be scheduled so late?”
+    Eugene sighs and takes a deep breath. You can tell the scheduling is affecting him as well.
+    Eugene: “I, uh, know this is not the best time for us to be conducting a job interview. Trust me, this is as big an issue for me as it is for you, if not more of an issue. Do you have any other questions before we begin?”
+    “Well then, why is this time such an issue for you?”
+    Eugene frowns, almost as if he didn’t want to be asked about it. He checks the clock and takes a deep breath before giving his answer
+    Eugene: “Truth be told, uh, my son’s kindergarten graduation is happening in about an hour…”
+    “And you willingly scheduled this interview to overlap with your fatherly duties?”
+    Eugene looks offended by your remark
+    Eugene: “Did you know that, uh, it’s very unprofessional to start an interview by questioning my parenting skills? Anyways, I, uh, think it's time to move on.” 
+    <<set $affection -=1>>
+
+Eugene slightly adjusts his posture and clears his throat. He looks down at the paper on his desk before speaking.
+Eugene: “What would you describe as your biggest strength?”
+->“I can be very good at delivering coffee from the machine to your desk”
+    Eugene stops and gives you a puzzled look.
+    Eugene: “Uh, just to be clear, you uh, said delivering coffee… to my desk?”
+    “That’s right sir! They didn’t call me the coffee man at my old job for no reason.”
+    Eugene puts his head down at his desk in frustration. He sighs and stays there for a bit before looking up and fixing his posture. 
+    Eugene: “That’s, uh, not quite what I meant by strengths. Worst of all, I don’t even like coffee, I’m, uh, more of a matcha guy myself.”
+    Eugene writes something down before leaning back a bit.
+    Eugene: “Let’s try to focus on skills that actually matter. We should move on.” 
+    <<set $affection -=1>>
+->“I’m very dependable and adaptable, I can handle whatever gets put on my desk”
+    You give a playful wink towards Eugene, hoping to break the tension. 
+    Eugene doesn’t entertain it, keeping his professional demeanor intact.
+    Eugene: “Dependable and adaptable… that's, uh, something I like to hear. We value employees who can handle what they’re given without question or hesitation.”
+    Eugene, refusing to match your energy, awkwardly starts taking notes. You can’t tell if he’s writing something or scribbling random shapes.
+    Eugene: looking up to face back at you and breaking the silence “I, uh, think we should move on to the next question now.”
+    //Neutral 
+->“I’d say that my biggest strength is knowing how to support strong leadership.”
+    Eugene nods in approval and he starts writing.
+    Eugene: “It’s always good to hear when, uh, a candidate appreciates the value of structure and order in the workplace.”
+    He leans forward a bit, his eyes showing interest.
+    Eugene: “Would you say you work effectively when given direction?”
+    You lean forward a bit as well, your eyes also showing interest.
+    “With the right boss, I tend to give my best.”
+    Eugene smiles and starts to look around the room as if he’s thinking hard. His gaze shifts downwards towards his wedding ring, and his dreamy smile quickly turns professional. He quickly leans back into his chair and recomposes himself.
+    Eugene: “Ahem. Professional. Right. Let’s, uh, move on.”
+    <<set $affection +=1>>
+
+Eugene: “Now, uh, on the contrary, everybody has areas that they’re working to improve upon.” 
+Eugene: “What would you describe as your biggest weakness?” 
+->“Well, I’m a bit of a perfectionist.”
+    Eugene: “I, uh, I’m going to have to stop you right there.” 
+    Eugene shifts around in his chair
+    Eugene: “That’s far too common of an answer and, uh, it won't get you anywhere, at least not with us”
+    //Neutral
+->“I would say that my biggest weakness… is that I don't have you.”
+    You raise your hand, making your condition visible to Eugene for the first time all meeting. The subtle hint lingers.
+    Eugene’s gaze shifts towards your hand, then back to meeting your gaze. He smiles and leans forward slightly, clearly interested.
+    Eugene: “Oh, I see… that’s certainly an, uh, interesting perspective. Of course I, uh, could give you proper guidance around here… assuming we hire you”
+    Eugene looks down at his ring for a moment and begins to hesitate. He clears his throat and forces himself back into his professional composure
+    Eugene: “Anyways… uh, let’s move on, shall we?”
+    <<set $affection +=1>>
+->“I don’t have any weaknesses, I already consider myself perfect!”
+    Eugene sighs and takes a couple deep breaths to compose himself. 
+    Eugene: “I see… your biggest weakness, uh, is your confidence. Confidence is important, of course, but uh, overconfidence can be just as problematic as insecurity.
+    Eugene looks around the room. He slowly directs his attention back at you, now forcing a faint smile.
+    Eugene: “Well, uh, now that I’ve got a sense of your biggest weakness, I think we can move on now.”
+    <<set $affection -=1>>
+
+Eugene straightens out a stack of papers that didn’t need to be straightened. He clears his throat, trying to keep his composure professional, but it’s obvious that he’s easing up to you. His voice softens a bit.
+Eugene: “Alright, uh, next question. What makes you worth bringing onto the team? In short, uh, why should we hire you?”
+->“I mean… you don’t HAVE to”
+    Eugene quickly blinks a few times, clearly shocked by your answer. He gives you a puzzled look as he tries to maintain his composure.
+    Eugene: “I- what? Excuse me?”
+    Eugene leans back in his chair and looks straight at the ceiling. He takes a deep breath before turning his attention back to you.
+    Eugene: “That kind of attitude isn’t going to convince me to hire you. Matter of fact, I’m, uh, not entirely convinced that you even want the job. Anyways… I have one more question left for you, let’s move on.”
+    <<set $affection -=1>>
+->“You should hire me because I know I’d be a great fit here.”
+    Eugene pauses and tilts his head, giving you a curious look
+    Eugene: “Hmmm… I’m, uh, curious as to why you say that.”
+    “Because I work best in a warm and welcoming environment and something about this place… and you for that matter… is telling me I’m right where I need to be”
+    Eugene blinks, clearly caught off guard. He blushes a bit and tries to force a polite smile, but it quickly fades as he looks down and remembers the ring. He clears his throat and readjusts himself in his chair.
+    Eugene: “Oh, uh… I, uh, appreciate the insightful answer. It’s very encouraging to hear when a candidate speaks with such conviction. Um… moving on, I have one more question left for you.”
+    <<set $affection +=1>>
+->“I believe that I have the skills are experience that the company is looking for”
+    “And I’m confident that I can meet, or even exceed, any expectations that you guys have.”
+    Eugene nods as he writes down a note
+    Eugene: “Okay, uh… Great answer, very straightforward and professional.
+    Eugene finishes his note
+    Eugene: “Alright we can move on. I’ve, uh, got one last question for you.” 
+    //Neutral
+
+:Eugene flips his paper, but his eyes drift away for a moment. He nervously glances at the clock, it reads 7:52. You can tell he wants to leave as soon as possible.
+Eugene: “So, uh, let’s talk about how you manage being under pressure. How do you manage the pressure when, uh, work gets demanding?”
+->“I actually work best when under pressure”
+    Eugene gives you a curious look, his gaze sharpens on you
+    Eugene: “Really you say? Please elaborate with an, uh, example if possible.”
+    You give off a small, confident smile that lingers long enough to catch Eugene’s attention
+    “Well… this interview, if I may. The stakes are high and the clock’s ticking, but here I am being calm, collected, focused, and putting forth my best effort. Now THIS is exactly the kind of pressure I thrive under.
+    Eugene: “I, uh, can’t argue that. You are showing me that you’re able to, uh, to stay sharp under pressure.”
+    You lean in slightly, your voice softens as you speak
+    “Of course, Eugene… I can also handle whatever pressure you put on me.”
+    Eugene blushes as he quickly clears his throat and adjusts his posture. He looks down at his wedding ring and sighs softly before forcing his gaze back up
+    Eugene: “I, uh, admire the confidence, I truly do. I suppose that if we, uh, do end up bringing you onto the team, then I suppose I’ll, uh, keep that in mind during, uh, future evaluations.
+    Eugene cracks a smile that continually widens. He catches himself and swiftly shakes the smile off his face, back to his professional demeanor. He hastily starts writing notes down.
+    Eugene: “Umm… right. We’re supposed to keep things professional
+    <<set $affection +=1>>
+->“I’m able to stay organized and prioritize on completing the most important task at hand before moving on.”
+    “It really helps with managing my workload without starting to feel overwhelmed.”
+    Eugene nods in agreement as he jots down a quick note
+    Eugene: “Good. We value employees who can, uh, manage their time and, uh, responsibilities effectively, especially when deadline pressure starts to mount.”
+    //Neutral
+->“I prefer to wait until the last minute to get things done.”
+    “I’ve noticed I work best under immense pressure.”
+    Eugene stops and sets his pen down. He quickly glances over to the clock, then forces his gaze back to you.
+    Eugene: “I see. That’s certainly one way to, uh, approach deadlines, however, we don’t recommend it”
+    Eugene leans back, his tone sharpens as if he’s about to lecture you
+    Eugene: “Putting things aside to do at the last minute can, uh, help cause unnecessary stress and, uh, even diminish the quality of work.”
+    “I don’t see a problem with how I operate. Matter of fact, I see consistency!”
+    Eugene takes a deep breath, you can feel his frustration in the exhale. He picks his pen back up and starts jotting down notes again.
+    Eugene: “Right… as long as you, uh, are able to keep the quality consistent then who am I to judge.”
+    <<set $affection -=1>>
+
+Eugene finishes writing up his notes. 
+Eugene: “Okay, uh, that’s all I have for you in terms of questions.”
+He looks down, facing the ring. He looks up at you with a soft gaze, his eyes meeting yours for longer than they should.
+Eugene: “Do you, uh, have any follow-up questions regarding your interest in working with us?”
+->“What would my daily responsibilities consist of?”
+    Eugene: “One moment, uh please”
+    Eugene rummages through his stack of papers and finds your resume. He leans closer to it, trying to read it.
+    Eugene: “Given your, uh, qualifications, and how your resume states that you’re, uh, “willing to accept any role except computer work”, I believe we would be able to find something suitable for you… assuming we do, uh, hire you.”
+    He sets the resume back in the stack of papers before straightening it out. He clears his throat and readjusts himself
+    “We can, uh, move on now
+    //Neutral
+->“How much would I even get paid?”
+    Eugene stares at you for a moment, a disappointed look holds across his face
+    Eugene: “Salary discussions typically persist upon, uh, further evaluation of candidates.”
+    Eugene’s tone softens as he once again unnecessarily straightens his stack of papers
+    Eugene: “We, uh, prefer candidates who focus on the position rather than the, uh, paycheck. The compensation will follow… assuming the position becomes yours.
+    He forces a smile, trying to divert the attention elsewhere
+    Eugene: “Lets, uh, move on.”
+    <<set $affection -=1>>
+->“How’s your marriage?”
+    Eugene’s eyes widen with shock, his pen slips. He straightens up far too fast.
+    Eugene: “My… uh, marriage. No no no… now's not the time for personal business. This is a job interview, not therapy!”
+    You lean in, refusing to let him evade the question
+    “Eugene… you didn’t answer my question.”
+    Eugene freezes. His eyes wander off to his wedding ring, then back to you. 
+    Eugene: “I, uh, I can’t.”
+    You lean in a bit more
+    “You hesitated before you answered. That tells me a lot already. I’ve also noticed how often you’ve been nervously looking at your wedding ring. Please, you can tell me Eugene.”
+    Eugene sighs and leans back, trying to relax himself.
+    Eugene: “I, uh, haven’t quite felt, uh, happy recently… a year to be exact… ever since my wife started picking up “retail therapy” as she calls it. Every damn day it's me going to work just to come home to a handful of packages that cost more than what I make in a day. It's frustrating. I’ve had to start working a ton of overtime just to be able to keep us afloat. I mean, fuck, I’m here right now working overtime and its overlapping with my son’s kindergarten graduation. You want to know which parent stayed up with him while he was stuck doing his homework? It was me! What does she do instead? MORE SHOPPING!!! You know what, the more I think about it, I don’t think I’ve heard that woman say she loves me in god knows how long… I just need a break…”
+    Eugene leans all the way forward, his face resting on his desk. He looks as if he’s about to break down.
+    Eugene: “I-I’m sorry. That was, uh, a lot I needed to get off my chest.
+    You lean closer to Eugene, comforting him
+    “I’m sorry Eugene… You shouldn’t have to carry that much stress alone”
+    He looks up, his tired, vulnerable eyes meeting yours.
+    Eugene: “I, uh, really shouldn’t be talking to you about this… but you listen… I, uh, truly appreciate it.”
+    He readjusts himself and clears his throat.
+    Eugene: “Thank you for listening, but I, uh, think we should change the subject now, before I say something I can’t take back.”
+    <<set $affection +=1>>
+:Eugene glances at the clock, the numbers 8:08 seem to hit him like a bus. His soft, anxious gaze shifts back to you, trying to look composed but failing to do so. 
+Eugene: “I, uh, see we have time for one more follow-up question, if you, uh, have any.”
+He forces a light smile as he awaits your next question.
+->“Would I be allowed to nap at my desk if things are slow?”
+    Eugene’s smile fades as he gives you an odd look, uncomfortably shifting in his chair.
+    Eugene: “I, uh, don’t believe that would really be, uh, appropriate. We expect full commitment and focus during work hours”
+    He fiddles with his pen and clears his throat, trying to regain his composure.
+    Eugene: “I, uh, appreciate the honest question, but uh… naps are prohibited in the office.”
+    He sets the pen down and he unnecessarily straightens his stack of papers as his eyes wander across the room.
+    <<set $affection -=1>>
+->“Actually, I don’t have any more questions.”
+    You give a small, reassuring smile and lean forward a bit, your tone softening.
+    “I know neither of us want to be here anymore. Why don’t we just end the interview here?”
+    Eugene pauses for a brief moment and gives you a surprised look. The tension in his body quickly fades as he gives off a loud sigh of relief.
+    Eugene: “You have no idea how, uh, relieving that is to hear.”
+    His gaze shifts towards the clock, it now reads 8:10. He gives you a smile, a genuine unforced smile.
+    Eugene: “Thank you so much for your, uh, understanding… and of course, thank you for allowing me to, uh, make it to my son’s kindergarten graduation on time.”
+    He picks up his pen and writes a couple things. He finishes writing his notes and looks back at you, ready to speak.
+    <<set $affection +=1>>
+->“What does training usually look like for new hires?”
+    Eugene nods and leans forward a bit. 
+    Eugene: “Training is, uh, pretty straightforward. We would pair you with somebody and, uh, have them walk you through the basics. Whoever trains you would be patient and, uh, committed to helping you succeed.”
+    He lightly taps his pen against the desk, then gives a small, encouraging smile
+    Eugene: “Of course, this all, uh, depends on your role and how quickly you can pick things up.”
+    He leans back in his chair, clicking his pen repeatedly. His gaze drifts towards you for a brief moment, it slightly softens before he straightens up and clears his throat.
+    //Neutral 
+
+
+//ENDINGS
+
+//Success (High Affection): 
+<<if $affection >5>>
+Eugene: “Well… now that this interview is, uh, officially over, I’d like to give you some immediate feedback.”
+Eugene leans forward and clears his throat. He stares into your eyes with a warm look he hasn’t shown you before.
+Eugene: “I’m impressed, I truly am. You, uh, absolutely crushed this interview. Your answers, your attitude… your way with words… all showed what I was, uh, looking for. But most of all, you showed heart.”
+A rare, genuine smile spreads across his face.
+Eugene: “So, uh… Congratulations, you're hired! Welcome to the team!”
+He looks at the time as he stands up to leave, but he hesitates for a moment before he even moves, as if he’s working up the courage to ask something. 
+Eugene: “I, uh, have a bit of an odd request. It, uh, would mean a lot to me if you came along with me to my son’s graduation… I’d like to share this moment with someone who seems to actually care. I’d like to… celebrate with you.”
+You step out of the office together, off to attend Eugene’s son’s graduation. Not only have you secured a new job, but you’ve also found a new connection, one that fills the void of your missing ring finger.
+
+Congratulations! You romanced Eugene!
+
+//Bomb The Interview (Low Affection):
+<<elseif $affection <2>>
+Eugene: “Well… now that this interview is, uh, officially over, I’d like to give you some immediate feedback.”
+Eugene leans back, relaxing a little, but his expression remains serious.
+Eugene: “I, uh, appreciate you taking the time to come in, but, uh, unfortunately I do not believe that you’re a good fit for us. Your answers and overall approach left plenty to be desired.
+He gives a polite, forced smile
+Eugene: “I’m sorry, but we, uh, will not be moving forward with you. I wish you the best with all of your, uh, future endeavors.”
+:Eugene checks the clock, it reads 8:16
+Eugene: “Now if you’ll excuse me, I, uh, have to go now.”
+You step out of the office with a massive sense of disappointment. No job, no ring finger, nothing to show for your troubles except for the guilt of failure. The door clicks behind you, and you leave the office empty handed.
+
+
+//You’re Hired! (//Neutral):
+<<else>>
+Eugene: “Well… now that this interview is, uh, officially over, I’d like to give you some immediate feedback.”
+Eugene leans forward and clears his throat, maintaining his professional composure.
+Eugene: “Overall, you handled the questions well and you showed the skills we’re looking for. Your ability to, uh, stay focused under pressure and a long list of qualifications make you a strong candidate.”
+He pauses, briefly taking one last glance at your resume before returning his attention back to you.
+Eugene: “Based on this, I’m pleased to offer you a position with us. Now while we don’t know what exact position yet, I do, uh, want to bring you aboard the team. I believe that your contributions will be valuable to us for the foreseeable future.”
+He sits back, giving a polite, encouraging smile
+Eugene: “Congratulations, and welcome aboard! I look forward to seeing what you accomplish with us.”
+You leave the office with a sense of pride and accomplishment. You should be excited for the next chapter in your life, but somewhere in the back of your mind lies the subtle ache of missed opportunity. On one hand, you have a job, but on the other hand, you still don’t have a ring finger.
+
 <<endif>>
 <<StopAnimation>>
 <<jump Menu>>
