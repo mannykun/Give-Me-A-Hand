@@ -10,6 +10,7 @@ Welcome to Give Me a Hand!
 title: Menu
 position: -218,-323
 ---
+<<set $affection = 0>>
 <<StopAnimation>>
 <<Swap startMenu>>
 <<musicOn Jazz_Theme>>
@@ -18,6 +19,8 @@ Who would you like to go on a date with?
         <<jump Tum>>
 ->Left Ring
         <<jump EugeneLR>>
+->Left Pinky
+        <<jump DarrenLP>>
 ->Right Thumb
         <<jump Feil>>
 ->Right Pointer
@@ -1226,4 +1229,314 @@ Narrator: Lend a hand to Philip and give some good advice to try and turn his ba
 Narrator: Or…
 
 Narrator: Tell Philip to start anew. He’s better off finding another job and ending this black hole of a business.
+===
+title: DarrenLP
+position: -490,317
+---
+<<Swap GamerRoom>>
+<<set $affection = 0>>
+//Background: 
+The faint glow of LED lights spills out from under the doorway, reflecting throughout the hallway. Inside, the repeated clicking of a mouse and banging on a keyboard echoes through the room, accompanied by the occasional thud of something hitting the floor. You breathe deeply, preparing for the horrors that persist inside that room, and knock on the door.
+:From behind the door, a muffled, panicked voice shouts out: 
+???: “Who’s there? OH RIGHT! You must be the guy who’s here to fix the WiFi. 
+There’s shuffling, a crash, and what sounds like a group of cans rolling across the floor.
+???: “Come in, just don’t unplug anything… or I’ll unplug your spine.”
+You step inside, carefully avoiding the sea of snack wrappers, dishes, empty energy drinks, and the stick-drift controller graveyard. The estranged individual sits there, perched atop their chair with a posture that physically pains you to look at.
+???: “The WiFi has been fucking HORRIBLE, my ping keeps going as high as 48!”
+They finish another energy drink and haphazardly throw it behind them, adding on to the pile.
+???: “So hurry up and fix it already, aight? I’ve got a ranked match in…”
+They check their other monitor
+???: “EEEUUUGHHHH!!! IT WAS SUPPOSED TO BE FIVE MINUTES AGO!! Chop chop… my rank depends on you.”
+You exhale slowly. 
+They think you’re here to fix their internet. 
+You know you’re here in an attempt to get this 27-year old degenerate out into the real world.
+
+
+//Opening Dialogue: 
+You take a careful step forward. The glow from the monitors reflects throughout the entire room. The individual swivels around in their chair, swapping their attention between you and a handful of screens.
+???: “Hey maintenance man… you’re cute…”
+They look you up and down
+???: “I’m the legendary THUMBSD0WN, top 0.3 percentile in every game I touch. Absolute legend, I know.
+They joyfully spin around in their chair for a moment
+<<Animate LPIdle>>
+THUMBSD0WN?: “My friends call me Darren, though… or at least they would if I had any friends…” 
+Darren lets out a loud, awkwardly forced laugh. He eagerly gestures back to the router, nudging you to fix it.
+
+
+//Dialogue Choices:
+
+
+You inch closer towards the router, carefully avoiding tripping over the mountain of cans as well as his chair.
+Darren: “So… you’re here to save my internet… or whatever… and maybeeeeeee… talk to me?”
+He gives you a nervous smile. You can’t tell if he’s nervous about his internet connection or a potential connection with you.
+Darren: “Y–yo–you look like you know how to handle routers… among other things…”
+->“Yeah I handle routers.”
+    “I’m a bit of a speedrunner when it comes to fixing routers.”
+    You gently tap on the router, as if you know what you’re doing. In reality, you’re just unplugging it and plugging it back in
+    Darren leans in, clearly impressed but trying to play it cool
+    Darren: “OH MY GOD ARE YOU A FAN OF SPEEDRUNNING!?!? Oh my god that’s soooooo hot.”
+    He starts excitedly spinning in his chair
+    Darren (still spinning): “If you’re this high rank at fixing routers… imagine what else you’re ranked highly in.”
+    He gives off the most uncoordinated wink you’ve ever seen
+    “You can find out… if this side quest is worth it enough.”
+    The router beeps, turning itself back on and capturing Darren’s attention
+    Darren: “AHHHH YOU FIXED IT!!! Thank you thank you thank you thank you thank you thank you thank you thank you.”
+    You sigh and take a step back, letting him soak in his “fixed” internet.
+    <<set $affection += 1>>
+->“Not really… I’m only qualified to fix the internet.”
+    Darren leans back in his chair, clearly unsure how to process that
+    Darren: “Oh… well can you pleeeeeeeaaaaaasssseeeeee fix it?”
+    You crouch down to unplug and plug the router back in. The lights on the router flicker back to life.
+    Darren: “YAYAYAYAY it’s fixed!!! You’re a wizard, Harry! Now I can go back to my social life!”
+    You sigh and watch as Darren resumes playing games as if you’re not even there.
+    neutral
+    “If you make another stupid remark like that again, I’ll unplug every device in this room one by one.”
+    Darren freezes mid-spin in his chair
+    Darren: “NOOOOOO NO NO NO NO NO. You CAN’T do that!”
+    He looks around the room at all his devices before his eyes slowly wander back to you with a nervous look.
+    Darren: “...even my dope ass lava lamp?”
+    “Especially the lava lamp.”
+    Darren: “N-not the lava lamp… bleugh… fine I’ll try to behave.”
+    Darren turns his attention to some sort of handheld emulator, giving you the opportunity to unplug and plug the router back in without him having to watch over you. 
+    <<set $affection -= 1>>
+The router now displays a constant green light, indicating the wifi is now working at a steady pace. Darren turns to face you, grinning like he just won a tournament.
+Darren: “Whew, okay okay… WiFi crisis averted. You’re officially my favorite person alive.”
+His eyes widen alongside his grind
+Darren: “Sooooo likeeeee…you game? I’d totally play with you now bro.”  
+->“I don’t play games at all anymore.”
+    Darren stares at you, shocked by your words
+    Darren: “Wh-WHAT!? You don’t play games… At all?? But… But… that’s like saying you don’t breathe air!! How in the world do you manage to live like this?”
+    You shrug, trying to keep a casual tone
+    “That’s what happens when you have a job.”
+    Darren: “A JOB!? WHAT DO YOU MEAN, A JOB?!
+    He flops face-first onto his desk and starts talking to himself
+    Darren: “Job… scary…”
+    Darren: “Responsibilities… scary…”
+    Darren: “Life without games… scary…”
+    You step back, allowing him to have his meltdown, trying not to laugh at the ridiculousness of a grown manchild terrified by the concept of work.
+    Darren finally picks his head up, signaling the end of his meltdown
+    Darren: “I– I’m sowwy… It’s just… the thought is… overwhelming…”
+    <<set $affection -= 1>>
+->“Yeah I game all the time!”
+    “Have you ever played Finger Gun: Xtreme? That’s gotta be one of my favorite games of all time.”
+    Darren freezes in place, his eyes lighting up. He slowly scoots his chair towards you and leans a bit closer.
+    Darren: “You’re kidding… you know… YOU KNOW FINGER GUN: XTREME!? Ohhh myyy goshhhh… I LOVEEEEE that game so much!”
+    He scoots his chair a tad bit closer.
+    Darren: “I think you and I just became best friends now. We HAVE to play together, WiFi guy.”
+    “Oh my God the legendary THUMBSD0WN wants to play a game… with me!?!?”
+    Darren smiles
+    Darren: “THUMBSD0WN would like to party up with you!”
+    <<set $affection += 1>>
+->“Not often. I mostly play single-player games when I have the time.”
+    Darren tilts his head in both disappointment and curiosity.
+    Darren: “Awww man… single-player? How are we gonna be able to play ANYTHING together then?”
+    Darren spins in his chair for a brief moment. Suddenly an idea hits him. His eyes widen.
+    Darren: “D-do you wanna play some Finger Gun: Xtreme on splitscreen?”
+    You smile politely. 
+    “Thanks, but I’ll pass for now. Maybe some other time?”
+    Darren groans dramatically, flopping around his chair like a fish out of water
+    Darren: “Ughhh… fine! But you’re missing out, WiFi guy,”
+    //Neutral 
+Darren spins back towards his monitors and starts playing something. He suddenly stops and swivels in his chair to face you. His eyes rest on you for a brief moment.
+Darren: “So uh… I know this is radom… but you’re… really… um…”
+He starts looking around in every direction except yours.
+Darren: “...cool… Yeah. You’re cool. Like, not cringe.”
+He scoots his chair an inch closer without seeming to notice he did it.
+Darren: “If you were an in-game boss, I’d… grind you…”
+The room goes silent for a moment. Darren clears his throat to kill the awkward silence.
+Darren: “I just… um… don’t usually get visitors that stay this long… they usually call me a loser and unplug all my cool gadgets.”
+He gives you a look, half hopeful, half terrified. He waits to see what you’ll say next.
+->“I’m just here to help, not to call you a loser.”
+    Darren blinks a few times, visibly relaxing
+    Darren: “Oh okay… fire!”
+    He calmly spins in his chair
+    Darren: “That’s… actually nice. Most people don’t stay here this long unless they’re trying to steal my super limited edition 1 of 1 glow-in-the-dark Gabe The Dog mousepad.”
+    He leans back with a sense of relief.
+    Darren: “Anyways… Thanks for not being mean like the rest. Makes getting the WiFi fixed less stressful, I guess.”
+    //Neutral
+->“I can see why people call you a loser.”
+    Darren freezes mid-spin, he stares back at you with a crushed look in his eyes.
+    Darren: “Wha–WHAT!? I– I– I’m not a loser!! Aghhh you’re gonna make me rage quit life!”
+    He repeatedly bangs his face into his desk, muttering to himself as he knocks an energy drink onto the floor.
+    Darren: “cringe… loser… lonely… whyyyyyyy…”
+    “Hey man, I didn’t mean it like that. I just meant that maybe people online call you that, but it doesn’t mean it's true.”
+    Darren picks his head up, wiping at his eyes.
+    Darren: “So… Y-you’re not… making fun of me?”
+    “Nope. I’m just here to help with the WiFi.”
+    Darren leans back in his chair, letting out a sigh.
+    Darren: “Oh okay… I’m sowwy for overreacting a little bit.”
+    <<set $affection -= 1>>
+->“You’d… grind me?”
+    “That’s one of the weirdest compliments I’ve ever received… but somehow the most flattering.”
+    Darren freezes mid spin, a huge grin spreads across his face.
+    Darren: “R-really? You think that’s flattering? I… oh wow… That's super poggers and the opposite of cringe.”
+    Darren: “You know… nobody’s ever said anything like that to me before… They usually just call me a weirdo loser and tell me to touch grass.”
+    He spins back towards his setup, still smiling like he just ranked up to top 0.02 percentile.
+    <<set $affection += 1>>
+Suddenly, a ping sound comes from Darren’s setup. It’s his phone. He swiftly picks it up, nearly knocking over another energy drink can in the process.
+Darren: “OH SNAP!! Check this one out WiFi guy!”
+He shoves the screen in your face, forcing you to watch it. It’s a Steamed Hams meme where every other word is replaced with the bababooey soundbite.
+Darren is leaning back in his chair, laughing hysterically.
+Darren: “OHHH MAN BABABOOEY HAHAHAHAHA!!!”
+Darren catches his breath from laughing, still pointing the phone at you like it deserves all of your attention.
+Darren: “That’s peak comedy, wouldn’t you say, WiFi guy?”
+->“That was chaotic and perfect.”
+    “... almost as chaotic and perfect as your smile.”
+    Darren freezes mid laugh, still trying to contain himself. He blushes and smiles as his eyes widen.
+    Darren: “W-Wait… Me? My smile? Bro that’s actually… so poggers.”
+    He leans back in his chair and lets out a nervous laugh.
+    Darren: “I– I don’t ever get compliments… like ever… You’re gonna make my brain lag.
+    He awkwardly looks around the room, still blushing
+    Darren: “Uhhh… so… uh… YOU think MY memes and MY smile are chaotic and perfect…”
+    Darren: “You’re cool too… like really really really cool… Like best-friend tier cool.”
+    <<set $affection += 1>>
+->“It's pretty funny, I guess.” 
+    Darren blinks at you, a little surprised by the lukewarm reaction.
+    Darren: “Oh okay… I guess that’s okay…”
+    He leans back, still holding the phone but no longer shoving it in your face.
+    Darren: “Most people don’t quite get it… awww man I was really hoping you’d enjoy that.”
+    //Neutral
+->“Aren’t those memes a little… outdated?”
+    Darren pauses and stares at you with disbelief before pulling the phone away from you.
+    Darren: “Ou–Out–OUTDATED?!?! HOW DARE YOU DISRESPECT A BLEND OF TWO TIMELESS CLASSIC!?!?”
+    He pauses, takes a shaky, deep breath, and glares back at you with suspicion.
+    Darren: “UGHHHH!! Nobody respects meme history anymore and it absolutely triggers me!”
+    <<set $affection -= 1>>
+The faint hum of the PC fan is suddenly drowned out by a rapid banging of a keyboard followed by a dramatic shout. Darren’s monitor flashes with a message of defeat. He swiftly rotates his chair around, nearly knocking a controller over.
+Darren (yelling): “NOOOOOO!!! WHAT THE HEEEEECCCCCKKKKK!!! I’M DOING MY BEST TO CARRY AND THESE NIMRODS CAN’T DO ANYTHING AT ALL!!
+He curls and bangs his head against his desk. 
+Darren: “Why does this always happen? The universe is plotting against the legendary THUMBSD0WN. EEEEEUUUUUGGGGHHH!!!!!”
+->“Your team doesn’t deserve to have you carrying them.”
+    “I know I could do better than those fools… I should be the one getting carried by you, the legendary THUMBSD0WN.”
+    Darren freezes for a second, then ecstatically turns his chair around to face you as if he’s just heard the most beautiful words in his life
+    THUMBDS0WN: “Y-YOU’D LET ME CARRY YOU!?!?”
+    His eyes practically sparkle
+    THUMBSD0WN: “Wifi guy… after you leave we’re playing Finger Gun: Xtreme… and I’ll show you some things that I don’t show to randoms.”
+    <<set $affection += 1>>
+->“Calm down dude, it’s just a game”
+    Darren freezes mid-rant and knocks his headphones off of his head
+    Darren: “It’s just… A GAME!?!? HOW DARE YOU BE SO NAIVE! THIS IS MY PASSION, MY SOCIAL LIFE, MY REASON TO LIVE AND YOU DARE DEGRADE IT AS ‘Just a game…’”
+    He cuts himself off and pauses for a moment. He leans down to pick up his headphones.
+    Darren: “Oh ummm… I’m sowwy… that sounded a whole lot sadder out loud than it did in my head…”
+    The room goes quieter than the overworked fan in his PC
+    <<set $affection -= 1>>
+->“Happens to the best of us dude.”
+    “Even 2018 LeBron couldn’t carry the Cavs to the championship.”
+    Darren blinks and lets out a long, shaky sigh
+    Darren: “Euughhh… I guess you’re right. I can be LeBron James all I want but sometimes you’ll end up with a group of Kendrick Perkins”
+    You’re mildly impressed by the fact that he has knowledge of something other than video games and memes
+    //Neutral
+Darren leans back in his chair. His match has long ended, but he hasn’t moved. His energy seems a bit… off…
+Darren: “You know, WiFi guy… sometimes I wonder if all this time spent… all the gaming and late night grinds… is it even worth it?”
+He gestures around the room, pointing out his disastrous living conditions.
+Darren: “I mean… I spend all my time chasing wins and climbings ranks like a madman”
+He looks up to face you with a hint of vulnerability in his eyes.
+Darren: “and when that’s over… I just feel… empty…”
+He sighs loudly, his soft gaze intensifying.
+Darren: “Do you ever think about what the true purpose of life is about, WiFi guy?”
+->“I think the meaning of life is about finding things and people that make it worth it.”
+    “All of your passions, the little moments, and shared laughs are a part of the beauty of life… Even the weird, chaotic moments are a blessing in life.”
+    “Life’s not just about wins or ranks, it’s about the vast experiences you can have, the lasting memories you can carry with you, all the deep interpersonal connections you make… all those are a part of what makes us feel… alive.”
+    “Your purpose in life and what you find worth it is entirely up to you. Everybody lives their life out differently, and that’s the beauty of it all.”
+    Darren leans back in his chair, blinking a few times as if he’s processing your words
+    Darren: “Wait… you’re… you’re serious? All the time I spend wrecking noobs is… worth it??”
+    You nod slightly, giving off a reassuring smile.
+    “Exactly. Life is about spending your time with the people and things you love.”
+    He smiles, clearly uplifted by your encouraging words
+    Darren: “Sooo… you’re saying that part of your purpose is to spend time with me?”
+    <<set $affection += 1>>
+->“The meaning of life is just to do whatever makes you happy”
+    “After all, we’re here for a good time, not a long time. Everyone finds a way to make their life worth living, and that’s totally okay.”
+    Darren leans back in his chair and looks up as if he’s thinking over your words.
+    Darren: “Yeah, I guess that makes sense. Just do the stuff I enjoy, right? Even if it’s playing ranked games from sunset to sunrise?”
+    He pauses, then cracks a crooked smile
+    Darren: “Yeah… life’s too short to worry about the purpose of it anyways.”
+    //Neutral 
+->“I don’t know either… I’m still trying to figure it out too.”
+    Darren blinks at you, then he slumps down a little.
+    Darren: “WHAT!? You don’t know either? B-b-but you know so much, WiFi guy… like, you fixed my WiFi, you HAVE to know the answer… you’re just that smart… right?”
+    He leans back in his chair, nervously fiddling with his keyboard
+    Darren: “So even if you don’t know… then what am I supposed to do with my life? Am I just doomed to scroll and game forever?”
+    <<set $affection -= 1>>
+Darren blankly stares at his monitors. His unease about life is still nagging at him.
+Darren: “WiFi guy, I’m conflicted. I want to see what more there is to life outside of my dungeon.”
+Darren: “But… then I’d have to… LEAVE THE HOUSE!”
+He nervously starts fidgeting with an empty snack wrapper.
+Darren: “I mean, the sun could be too bright, there could be a lot of meanies out there. Ew and the thought of bugs disgusts me.”
+He glances at you, his eyes wide and almost pleading
+Darren: “WiFi guy… you’ve seen the outside world, right? Do you… do you think I can handle it?”
+->“You can handle it. Nothing’s going to hurt you.”
+    Darren blinks. He turns his head with uncertainty, still fidgeting with the snack wrapper.
+    Darren: “Huh, uh… yeah I guess I could survive for a little bit… but what if somebody gives me an odd look? What if the wind blows me away? or…”
+    He takes a long pause as a mortified look spreads across his face.
+    Darren: “WHAT IF BUGS SWARM ME AND EAT ME ALIVE!?”
+    “It’s not that bad… like at all. You’ll be fine.”
+    Darren: “I don’t know. The outside just seems so… scary.”
+    He spins a little in his chair, nervously considering the idea.
+    //Neutral
+->“Relax Darren. Bugs would probably eat you alive before you even notice them.”
+    He freezes mid-fidget, his eyes widen in horror.
+    Darren: “WHAT!? Eat me? I can’t go outside now, I’ll never survive the danger.”
+    He aggressively starts fidgeting with his snack wrapper 
+    “Just kidding dude. There aren’t any evil bugs out there, and nothing’s out to get you. I promise.”
+    Darren blinks rapidly. He stops fidgeting with the wrapper as his face transitions from horror to rage
+    Darren: “You’re… kidding… WHY WOULD YOU DO THAT TO ME!?!? 
+    He glares at you, still uneasy, still contemplating his next steps.
+    <<set $affection -= 1>>
+->“I think you’d be able to handle it…”
+    “only if you went with me.”
+    Darren pauses. He opens his mouth to speak, but keeps tripping on his words.
+    Darren: “G-G-Go o-outside… W-With you? Go outside… t-t-together?”
+    Darren tries to play it cool but is obviously blushing. He clears his throat.
+    “I’d make sure nothing happens to you buddy. I’d only show you the fun parts of the world, not the scary ones.”
+    Darren: “You’d play a support class for me… outside?? That may be the nicest thing anybody’s ever offered to do for me.”
+    Darren continues to fidget with his snack wrapper, very obviously considering your offer.
+    <<set $affection += 1>>
+
+
+
+//ENDINGS
+//Darren Goes Outside (High Affection):
+<<if $affection >5>>
+You open the door and motion for Darren to come with you.
+Darren gets up from his chair, slowly and cautiously walking towards the door.
+He reaches the doorway, the only thing standing between him and a much needed breath of fresh air.
+Darren takes a deep, shaky breath. He hesitates for a moment.
+Darren: “I think I’m ready, WiFi guy.”
+You gently lead him outside, trying not to overwhelm him. His first steps onto the grass are wobbly and awkward.
+Darren: “Woah… This feels… like everything I’ve been missing in my life!”
+Darren slips up a small, nervous laugh.
+He looks all around, taking in the cool breeze, faint sunlight, and the harmony of birds chirping.
+He turns to you, his gaze as welcoming and curious as ever.
+Darren: “This is so hype WiFi guy, thank you for showing me what I’ve been missing.”
+Darren: “I think I could actually get used to this… especially with you.”
+He nudges you, clearly wanting more
+Darren: “WiFi guy, can we go on adventures together? The world isn’t so scary with you around.”
+You hold out your hand to him, and he leans into it.
+Not only did you get the manchild out of the house, you even got him to be your new pinky finger!
+
+Congratulations!! You Romanced Darren!!
+
+
+
+
+//Failure (Low Affection):
+<<else>>
+You open the door and motion for Darren to come with you.
+Darren gets up from his chair, slowly and cautiously walking towards the door.
+He reaches the doorway, the only thing standing between him and a much needed breath of fresh air.
+Darren takes a deep, shaky breath. He hesitates for a moment.
+Darren: “I think I’m ready, WiFi guy.”
+You gently lead him outside, trying not to overwhelm him. His first steps onto the grass are wobbly and awkward.
+Darren pauses, unable to hide his visible discomfort. 
+Darren: “AHHH TOUCHING GRASS SCARY!!”
+Darren flails in place like a fish out of water, his scream echoes throughout the yard.
+A mosquito circles around you and Darren, ultimately picking Darren as its target. The mosquito lands on Darren and bites him. 
+Darren jolts up immediately, his scream now piercing your ears.
+Darren: “AHHHHHHHHHHH BUGS TRYING TO EAT ME!!!”
+He runs inside the house, slams the door and locks it, leaving you all alone outside.
+The good news? You got him out of the house.
+The bad news? You still don’t have a left pinky.
+<<endif>>
+<<jump Menu>>
 ===
