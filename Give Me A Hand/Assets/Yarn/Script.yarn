@@ -34,7 +34,7 @@ Your date is late! They were supposed to be here 17 minutes ago!
 *Are they even going to show up? Am I getting stood up right now?* 
 As the thoughts start to sting, a broad silhouette emerges through the doorway[br /]and approaches in your direction. 
 They sit down across from you, but something about them feels… off.
-<<Animate Tum>>
+<<Animate Toe>>
 
 Mysterious Stranger: “...” 
 The silence echoes as it stares at you with the blankest of stares. 
@@ -292,7 +292,7 @@ Thumb: Now, for your overall grade. Would you like to know?
 <<jump Menu>>
 ===
 title: Feil
-position: 2,-69
+position: 2,-179
 ---
 <<set $affection = 0>>
 <<Swap Observatory>>
@@ -485,7 +485,7 @@ Feil: Guess I’ll have to look else where in this vast universe…
 <<jump Menu>>
 ===
 title: EugeneLR
-position: -411,331
+position: -488,170
 ---
 <<set $affection = 0>>
 <<Swap Office>>
@@ -751,7 +751,7 @@ You leave the office with a sense of pride and accomplishment. You should be exc
 <<jump Menu>>
 ===
 title: PennyRP
-position: 124,81
+position: 17,-22
 ---
 <<set $affection = 0>>
 <<Swap Waterpark>>
@@ -970,4 +970,260 @@ Oh and by the way… You’re totally color blind. You really should’ve mentio
     [GAME OVER: BAD ENDING]
     <<jump Menu>>
 
+===
+title: PhilipRM
+position: 14,151
+---
+Narrator: The alley stretches like a forgotten scar between two crumbling brick buildings. Graffiti completely covers the walls: incoherent gang tags, some weird political cartoons, and what seems to be a really graphic Rule 34-type scenario going on with Mario doing something with a pineapple… 
+
+Narrator: Luckily it’s mostly covered up by the other tags. 
+
+Narrator: However, you notice something scribbled on Mario’s pineapple.
+
+Narrator: It’s a message in a really detailed script handwriting with a number written below. The message reads…
+
+Narrator: “Call me with your best Chewbacca impression: (123)-FLIP-(4567).”
+
+//Background Interaction 1:
+
+//Choice 1 (⚪): 
+->You have to make that call.😂
+    Narrator: You get your phone out and immediately dial the number.
+    Narrator: You take a second to cough and hype yourself up to make your best possible impression as you wait for someone to answer your call…
+    Bar Phone: Ello? This is Flip’s… whatcha want, mate?
+    Narrator: There’s a long pause…
+    Bar Phone: Ell–
+    Player: (*Very Loudly*) RAWRRWWGGHHH-ARRR!!
+    Narrator: The voice on the line is silent for a moment…
+    Narrator: Then…
+    Bar Phone: AAGHHHH!! BLOODY HELL!?! WHAT THE F—?!
+    Narrator: You hear the phone drop and tumble on the floor… you then hear a very faint voice in the background.
+    Bar Phone: (*Timidly*) I think I shat myself… 
+    Narrator: You can’t help but burst with laughter, (I’m assuming… the writer is trying his best) as you make your way further down the alley.
+//Choice 2 (⚪): 
+->Too old for prank calls.
+    Narrator: You roll your eyes, deciding that it would be wrong to call someone you don’t know.
+    Narrator: You wouldn’t even be able to see the number anyway since your eyesight is starting to fail you.
+    Narrator: Because you're old…
+    Narrator: Boomer.
+    Narrator: You hobble your way further down the alley, with your weak-ass knees…
+
+Narrator: The alley smells of rain-soaked asphalt, old beer, and a faint metallic tang. A dented dumpster buzzes quietly with flies, making it clear this isn’t a place you’d stumble into by choice.
+Narrator: At the far end, a flickering neon sign shows a round-faced man resembling Kim Jong Un, frozen mid–middle finger, with a few roosters behind him. The sign reads “Flip the Bird Pub”, and its glow pulses…. Menacingly…
+Narrator: Beneath it, a dented and rusted metal door leans against the wall, paint peeling in curls. This place only opens from midnight to 4 a.m., tucked away from the city and common sense.
+Narrator: You walk up to the door and grab the rust-stained handle and give it a tug.
+Narrator: It doesn’t move.
+Narrator: You give it a push… Still nothing.
+Narrator: The door has been sealed shut with years of rain, rust, and complete neglect. It clearly hasn’t been opened by anyone in a very, very long time.
+Narrator: For some unknown reason, maybe fate, alcoholism, or maybe just stubbornness…
+Narrator: YOU decide; this is definitely the place to get that drink you’ve been craving.
+Narrator: It’s not like there’s a cleaner, normal bar just around the corner.
+Narrator: No! This rusted, sealed-off death trap of a door is absolutely the place to get a drink.
+Narrator: You take a couple steps back and ready yourself…
+
+
+
+//Background Interaction 2: 
+
+//Choice 1 (⚪): 
+->KICK IT!
+    Narrator: You charge with all your might and BLAST kick the door open.
+    Narrator: You then realize that you might’ve overdone it, as the momentum from your charge sends you tumbling down the seemingly hidden steps.
+//Choice 2 (⚪): 
+->SHOULDER RAM!
+    Narrator: You brace your shoulder and charge full force into the door.
+    Narrator: The door EXPLODES inward with a high pitched deafening SKREEECH! Announcing your arrival…
+    Narrator: The impact throws you forward, and you tumble down the seemingly hidden steps.
+
+Narrator: THUD. THUD. THUD. You finally hit the sticky floor of the pub.
+Narrator: A pair of snake boots enters your view as you start recovering from your fall.
+<<Animate RMIdle>>
+Philip: …Crikey… that’s a new way in. Are you alright there, mate?
+Narrator: You’re still in a daze and struggling to get up.
+Philip: (Mildly Concerned) Here, take me hand, mate.
+Narrator: Philip puts down one of the two beers he’s been holding on the bar and reaches his hand out towards you.
+Narrator: You take Philip’s hand; his grip is steady and firm as he slowly pulls you upright. Whatever was on the floor is now stained all over your clothes, but you’re standing… barely.
+Narrator: A sharp twinge shoots through your lower back, making you wince and lean against the bar for support.
+Player: (wincing in pain) Damn… my back… think I might’ve tweaked it a little.
+Philip: (cheerfully) But you're on your feet, mate! The name’s Philip, here’s a bit of medicine for ya, mate.
+
+
+
+
+
+Dialogue Choices For Interaction 1:
+
+//Choice 1(+): 
+->Thanks (Take the Beer)
+    Narrator: You take the beer. Philip smiles, lifts the other beer he’s been holding, and gives you a little nod.
+    Philip: Cheers! To entering the unknown, mate!
+    Narrator: You raise your beer to meet his, clinking bottles with a satisfying clink.
+    Narrator: Together, you both take a deep drink, the cold, foamy liquid washing away the chaos of your alleyway entrance.
+    Narrator: You take a seat at the bar and are glad that you decided to stick with this place.
+//Choice 2(-): 
+->I don’t drink
+    Narrator: Philip’s grin fades into a sly, mocking smirk.
+    Philip: Oh, so you only drink virgin stuff, do ya?
+    Narrator: Philip quickly starts making you a drink.
+    Philip: (slightly annoyed) Here’s the virgin drink for the virgin.
+    Narrator: He slides a bright red Shirley Temple across the bar toward you, complete with cherry and little umbrella, shaking his head and muttering about “soft city folk.”
+    Narrator: You sit down, slightly humiliated, the pub suddenly seeming smaller or maybe that’s just you.
+
+Narrator: As you settle into the stool, your eyes wander across the pub.
+
+Narrator: The place is narrow, dimly lit, and chaotic in that oddly charming way only an Aussie dive can be.
+
+Narrator: Crooked fairy lights snake along the walls, boomerangs hang at slightly alarming angles, and a small shrine to Steve Irwin dominates one corner.
+
+Narrator: Surrounding it are several dried, dead stingrays, carefully arranged, giving the display a slightly macabre edge.
+
+Narrator: The bar is in a state of organized chaos. Bottles of wine, spirits, and Philip’s questionable concoctions are all stacked together, some empty, each labeled in his scrawled, broken English you can’t even make out a word. 
+
+Narrator: Coasters are scattered across the sticky bar, and the air carries the faint tang of spilled booze. 
+
+Narrator: Far down the bar, the only other patron sits hunched over his glass. Bald, glasses, and wearing a black pork pie hat…
+
+Narrator: A gas mask dangles from his neck, swinging slightly as he leans forward, staring into his drink as if lost in some very deep thought.
+
+Narrator: Philip returns after briefly speaking with the other patron, wiping his hands on a dirty rag, and leans on the counter.
+
+Philip: Crikey… you’re the first person I’ve seen come through that door.
+
+Philip: I had one of me boys come and weld it shut a coupla years back now.
+
+Philip: Guess the time and rain finally got to that bugga. All me regulars stick with the Bilco doors out back.
+
+Player: (still in pain) I’ll have to remember that for next time… Because goddamn, did that hurt.
+
+Philip: (shaking his head slightly) Aye, had to get it shut though, mate. Too many crack and heroin addicts kept sneaking in through that alley.
+
+Narrator: Philip picks up a glass nearby and starts to clean it with his dirty rag, making the glass more cloudy as he “cleans it”.
+
+Philip: Ruined the place more times than I care to count. Once I sealed it, those drongo addicts were finally gone for good.
+
+Philip: But this leads me to my next problem…
+
+Narrator: You realize this is turning out to be quite a long story all because of that damn door. Now you’re wondering when and how it will end.
+
+Philip: With the front entrance stuck in that alley and the only other way in through the Bilco doors out back, not many people know this place even exists, mate!
+
+Philip: Sooo.. I had the idea to try and shift my business onto the computer digital space! I had enough to get some ad space on a coupla platforms, but…
+
+Philip: I had to all the marketing myself… which turned out okay. I’ve got a coupla regulars now.
+
+Narrator: Philip’s expression starts to sour slightly as he’s in thought.
+
+Philip: But crikey… They’re some weird blokes.
+
+Narrator: Desperate to change the subject to anything other than his business and financial failings, you want to try asking him about something.
+
+Player: Do you mind if I ask you a question, Philip?
+
+Philip: (grinning, shrugging a little) Go ahead, mate! What’s on your mind?
+
+Dialogue Choices For Interaction 2:
+
+Choice 1(-,☠️): Ask about the other patron
+Player: So what’s the deal with the bloke over there?
+Philip: (frowing slightly) Ah… 
+Philip: Well… 
+Narrator: The guy at the end of the bar is now giving Philip a death stare.
+Philip: (voice cracking, nervously) Ya, see here mate… he’s someone who GREATLY appreciates his… 
+Narrator: You noticed Philip’s gaze shift to something behind you.
+Philip: (squeaks, fearfully) Privacy.
+Narrator: You start to turn around…
+Narrator: BBAAMMMM!!!
+Narrator: You just took a right hook the face! Stunning you into a short daze. 
+Narrator: You then hear someone shouting right in your face.
+Tweaker Patron: (muffled) WHERE IS HE!?!
+Narrator: Philip is completely pale and locked in place.
+Narrator: The tweaker patron grabs your collar with both hands and starts shaking you uncontrollably.
+Tweaker Patron: (less muffled) WHERE’S JESSE!?!
+Narrator: You’ve been shaken back to a conscious state and are now completely terrified.
+Player: (high pitched, scared) THE FUCK ARE YOU TALKING ABOUT!?!
+Narrator: The tweaker patron starts stepping back towards the sealed door you forced open for them earlier.
+Narrator: He snatches up his gas mask and straps it on with terrifying efficiency
+Tweaker Patron: (frantic) WE NEED TO COOK!!!
+Narrator: The tweaker patron bolts out and you and Philip try to process what in the hell just happened.
+Player: PHILIP! WHAT THE FUCK WAS THAT!
+Philip: (annoyed) I told ya! My regulars are some weird blokes but at least they aren’t drongo addicts!
+Narrator: You’ve just about had it with this pub at this point… 
+Narrator: You had basically forced your way in, which led to you hurting your back.
+Narrator: Now you were just punched in the face for no reason other than asking a simple question… 
+Narrator: Which you really never even got a response to.
+Narrator: Now it looks like Philip has got something to say to you.
+Philip: (turning red, muttering through gritted teeth) Bloody hell… and out goes one of the regulars!
+Philip: (annoyed) Thanks a lot, mate. Couldn’t just keep to yourself, could ya…
+Narrator: A feeling of murderous rage starts to fill within you, all the events leading to this moment feel like scars in your mind.
+SUB CHOICE (PASS/FAIL)
+Choice 1(⚪): Remain Calm, Carry On!
+Narrator: You remember why you’re really here and push the anger deep down.
+Choice 2(☠️): CRASH OUT!
+Narrator: You dump what’s left in your glass on Philip’s head, and he’s left in complete shock by your actions.
+Philip: (pissed, serious) What in the hell do ya think you’re doing…
+Philip: (sharply) MATE!
+Narrator: He gets into a fighting stance and quickly jabs you in the nose, knocking you back a few feet.
+Player: (loud, bellowing) RRRRRAAAAAAAAHHHHHH!!!
+Narrator: Your rageful roar echoes throughout the bar and into the alley. Philip’s face starts to turn pale from the fear of what he’s just awakened.
+Philip: (timidly) O.. O.. Okay, mate. I’m sorry.. I apologize.
+Narrator: You start to calm down for just a second…
+Narrator: But Philip opens his mouth again.
+Philip: I mean, mate. What’d you expect? You dumped your drink on me so I had to set ya straight.
+Philip: (smirking, under his breath but audible) Not that you’d be able to take me anyway.
+Narrator: Just as he finished that line, you take the glass still in your hand and huck it straight into Philip’s face.
+Narrator: He’s stunned, and his nose starts to trickle some blood.
+Narrator: A voice screams in your mind…
+Narrator: FINISH HIM!
+Narrator: You grab Philip and drag him over the bar and onto the floor.
+Narrator: You then hop up on top of the bar and perform a devastating elbow drop right into Philip’s solar plexus.
+Narrator: You feel the impact knock all the air out of Philip’s lungs and hear two distinct noises. CRACK. SQUISH.
+Narrator: You get up and slowly realize what you’ve done… 
+Narrator: You check Philip’s pulse..
+Narrator: Nothing…
+Player: OH… SHIT!!
+Narrator: Realizing you’ve just committed murder, you start a life on the run from authorities. After stealing what little cash the bar had in the register, you drift from place to place.
+Narrator: In the end you died while you were asleep in a snowstorm as a homeless beggar in a remote region of the world.
+[GAME OVER: MURDERER]
+
+Choice 2(+): Ask about the sign out front
+Player: So… what’s with the sign out front? 
+Player: The one with Kim Jong Un and the chickens?
+Philip: (brightening instantly) Ohhh, that beauty! Yeah, me and me blokes designed that. I put that up ’cause I bloody love that man.
+Player: (concerned) …Kim Jong Un?
+Philip: Aye! Little fella looks like a fat baby. Absolutely adorable.
+Philip: I just wanna pinch those cheeks of his.
+Player: …Which cheeks?
+Philip: (already inhaling to answer, eyes widening with enthusiasm) Well, if ya mean—
+Player: Hold on… Never mind, please don’t answer that.
+Player: You do know he’s a totalitarian dictator who doesn’t feed his people but instead publicly executes them and puts them into forced labor camps?
+Narrator: Philip is visibly stunned by your words.
+Philip: Oh… 
+Philip: I thought he was just a famous fat chinese influencer…
+Philip: (timidly, quietly) This is what I get for dropping out in highschool.
+Philip: (sadly, teary-eyed) Probably yet another reason why the bar is failing.
+
+
+Choice 3(+): Ask about the Steve Irwin shrine
+Player: So what’s the story with the Steve Irwin shrine?
+Player: It’s a little out there… no?
+Narrator: Philip glances over at the candles, the photos, and the ring of dried dead stingrays. His eyes well up with tears.
+Philip: (choked up) Beautiful, ain’t it? Finest part of the whole bloody bar.
+Philip: Built it meself… Every piece, every candle, every photo.
+Philip: (a singular tear runs down his cheek) Real proper tribute… for a proper man.
+Player: It’s beautiful… How’d you get the dead stingrays, though?
+Philip: (regaining his composure) Oh, those?
+Philip: (proudly) Caught ‘em meself while I was out fishing. Every single one of the buggers.
+Philip: Took me weeks to dry ‘em out just right. Was worth it, though. Really gives it character
+Philip: (sadly) Course, not everyone is such a big fan of it as I am.
+Philip: Got this one regular, some nasty old cat lady… A real piece of work. She says the shrine is ‘grotesque’ and ‘deeply troubling’.
+Narrator: Philip’s expression dims.
+Philip: (quiet, defeated) Probably another reason the bar’s failing…
+
+Narrator: In this moment you are given a fateful choice…
+
+Narrator: Lend a hand to Philip and give some good advice to try and turn his bar in the right direction.
+
+Narrator: Or…
+
+Narrator: Tell Philip to start anew. He’s better off finding another job and ending this black hole of a business.
 ===
